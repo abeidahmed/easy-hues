@@ -1,0 +1,49 @@
+// Spaces in rems
+//
+$space-0: calcRem(0px) !default;
+$space-1: calcRem(4px) !default;
+$space-2: calcRem(8px) !default;
+$space-3: calcRem(12px) !default;
+$space-4: calcRem(16px) !default;
+$space-5: calcRem(20px) !default;
+$space-6: calcRem(24px) !default;
+$space-8: calcRem(32px) !default;
+$space-10: calcRem(40px) !default;
+$space-12: calcRem(48px) !default;
+$space-16: calcRem(64) !default;
+$space-20: calcRem(80px) !default;
+$space-24: calcRem(96px) !default;
+$space-32: calcRem(128px) !default;
+$space-40: calcRem(160px) !default;
+$space-48: calcRem(192px) !default;
+$space-56: calcRem(224px) !default;
+$space-64: calcRem(256px) !default;
+
+// Spaces in percentages for easy mapping
+//
+$space-1-2: 50% default;
+$space-1-3: 33.333333% default;
+$space-2-3: 66.666667% default;
+$space-1-4: 25% default;
+$space-2-4: 50% default;
+$space-3-4: 75% default;
+$space-1-5: 20% default;
+$space-2-5: 40% default;
+$space-3-5: 60% default;
+$space-4-5: 80% default;
+$space-1-6: 16.666667% default;
+$space-2-6: 33.333333% default;
+$space-3-6: 50% default;
+$space-4-6: 66.666667% default;
+$space-5-6: 83.333333% default;
+$space-1-12: 8.333333% default;
+$space-2-12: 16.666667% default;
+$space-3-12: 25% default;
+$space-4-12: 33.333333% default;
+$space-5-12: 41.666667% default;
+$space-6-12: 50% default;
+$space-7-12: 58.333333% default;
+$space-8-12: 66.666667% default;
+$space-9-12: 75% default;
+$space-10-12: 83.333333% default;
+$space-11-12: 91.666667% default;

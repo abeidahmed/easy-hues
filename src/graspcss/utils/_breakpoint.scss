@@ -1,0 +1,141 @@
+// Breakpoint
+//
+$breakpoints: (
+  xs: $bp-xs,
+  sm: $bp-sm,
+  md: $bp-md,
+  lg: $bp-lg,
+  xl: $bp-xl
+) !default;
+
+// Container width for edges on the screen
+//
+$container-width: (
+  xs: $xs-margin-x,
+  sm: $sm-margin-x,
+  md: $md-margin-x,
+  lg: $lg-margin-x,
+  xl: $xl-margin-x
+) !default;
+
+@if nth(map-values($breakpoints), 1) != 0 {
+  @error 'The first key in the $breakpoints map must have a value of "0".';
+}
+
+@function graspcss-next($breakpoint-name, $bp: $breakpoints) {
+  $gbp: map-keys($bp);
+  $i: index($gbp, $breakpoint-name);
+
+  @if $i != 0 and $i < length($gbp) {
+    @return nth($gbp, $i + 1);
+  }
+
+  @return null;
+}
+
+@function breakpoint-min($breakpoint-name, $bp: $breakpoints) {
+  @return map-get($bp, $breakpoint-name);
+}
+
+@function breakpoint-max($breakpoint-name, $bp: $breakpoints) {
+  $next: graspcss-next($breakpoint-name, $bp);
+
+  @if $next {
+    @return breakpoint-min($next, $bp) - 0.02;
+  }
+
+  @return null;
+}
+
+@function graspcss-bp-sort($breakpoint-name, $bp: $breakpoints) {
+  @if map-has-key($bp, $breakpoint-name) {
+    @return "-#{$breakpoint-name}";
+  }
+
+  @return null;
+}
+
+/// @param {number} $number - 24px, 32px etc
+/// @returns {number} $number - 1em, 2.5em, etc
+
+@function graspcss-px-em($number) {
+  @if type-of($number) == "number" and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+  @return $number;
+}
+
+/// @param {breakpoint-name} $breakpoint-name - xs, sm, md, lg, xlg
+/// @param {direction} $direction - up, down, only
+/// @returns {breakpoints} media queries
+
+@function breakpoint($breakpoint-name, $direction, $bp: $breakpoints) {
+  $str: "";
+  $rtd: "";
+  $rtu: "";
+  $bp: graspcss-px-em($bp);
+  // Min width
+  @if $direction == "up" {
+    @return breakpoint-min($breakpoint-name, $bp);
+  }
+  // Max-width
+  @else if $direction == "down" {
+    $next: graspcss-next($breakpoint-name, $bp);
+    @return breakpoint-max($breakpoint-name, $bp);
+  }
+  // Only
+  @else if $direction == "only" {
+    $up: breakpoint-min($breakpoint-name, $bp);
+    $down: breakpoint-max($breakpoint-name, $bp);
+
+    @if $up != null and $down != null {
+      $str: $str + "(min-width: #{$up}) and (max-width: #{$down})";
+    }
+    // 2
+    @else if $down == null {
+      $rtd: $rtd + "(min-width: #{$up})";
+      @return $rtd;
+    }
+    // 3
+    @else if $up == null {
+      $rtu: $rtu + "(max-width: #{$down})";
+      @return $rtu;
+    }
+    @return $str;
+  }
+}
+
+/// @param {breakpoint-name} $breakpoint-name - xs, sm, md, lg, xl
+/// @param {direction} $direction - up, down, only
+/// @returns {breakpoints} media queries
+
+/// usage - @include breakpoint($breakpoint-name, $direction) {
+///            write your css...
+///         }
+
+@mixin breakpoint($breakpoint-name, $direction, $bp: $breakpoints) {
+  $size: breakpoint($breakpoint-name, $direction, $bp);
+  $str: breakpoint($breakpoint-name, $direction, $bp);
+
+  @if $direction == "down" {
+    @media (max-width: $size) {
+      @content;
+    }
+  }
+  // Min width select
+  @else if $direction == "up" {
+    @media (min-width: $size) {
+      @content;
+    }
+  }
+  // Only
+  @else if $direction == "only" {
+    @media #{$str} {
+      @content;
+    }
+  }
+  // Return @content if direction is not set
+  @else if $str == "" {
+    @content;
+  }
+}

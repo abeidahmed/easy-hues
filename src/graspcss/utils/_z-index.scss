@@ -1,0 +1,16 @@
+/// Usage - z-index: z($name);
+///
+/// @param {name} $name - dropdown, navbar, etc
+/// @returns {number}
+///
+
+@function z($name, $z: $z-index) {
+  @if map-has-key($z, $name) {
+    @return map-get($z, $name);
+  }
+  //Warn if no name is present
+  @else {
+    @error "No name is present in `#{$z-index}` of the name `#{$name}`";
+  }
+  @return null;
+}

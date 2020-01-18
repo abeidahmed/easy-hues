@@ -1,0 +1,21 @@
+@mixin container($width: $container-width, $bp: $breakpoints) {
+  @each $bp, $margin in $width {
+    $var: index(($width), ($bp $margin));
+    @include breakpoint($bp, up) {
+      // If not the last breakpoint
+      @if $var != length($width) {
+        margin: 0 $margin;
+      }
+      // Do not exceed a fixed width for the last breakpoint
+      @else {
+        max-width: calc(#{$bp-xl} - #{$xl-margin-x});
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}
+
+.container {
+  @include container();
+}

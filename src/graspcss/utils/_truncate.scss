@@ -1,0 +1,8 @@
+/// @param {number} $character-length - 20, 30, 70 etc
+///
+@mixin truncate($character-length) {
+  max-width: $character-length * 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

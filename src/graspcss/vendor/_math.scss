@@ -1,0 +1,63 @@
+/// @author Abeid Ahmed
+///
+
+$global-font-size: 1rem !default;
+
+/// Strip unit
+/// @param {number} $num - (e.g. 24px, 1rem, 2em, etc)
+/// @returns {number} $num - (e.g. 24, 1, 2, etc)
+///
+@function stripUnit($num) {
+  @return $num / ($num * 0 + 1);
+}
+
+$stripped-font-size: stripUnit($global-font-size) * 16px !default;
+
+/// Convert any unit to rem
+/// @param {number} $value - number in any unit (e.g. 14px, 12px, 2em)
+/// @returns {number} $value - number in rem
+///
+@function calcRem($value, $base: $stripped-font-size) {
+  //Warn if value entered is not a number
+  @if type-of($value) != "number" {
+    @error "The value that was entered is not a number";
+    @return $value;
+  }
+  //Strip percentage unit
+  @if unit($value) == "%" {
+    $value: ($value / 100%) * 1rem;
+  }
+  //Strip any other unit rather than 0
+  @else if unit($value) != "rem" {
+    $value: (stripUnit($value) / stripUnit($base)) * 1rem;
+  }
+  //If the value is 0, then return 0
+  @else if $value == 0rem {
+    $value: 0;
+  }
+  @return $value;
+}
+/// Convert any unit to em
+/// @param {number} $value - number in any unit (e.g. 14px, 12px, 2em)
+/// @returns {number} $value - number in em
+///
+@function calcEm($value, $base: $stripped-font-size) {
+  //Warn if value entered is not a number
+  @if type-of($value) != "number" {
+    @error "The value that was entered is not a number";
+    @return $value;
+  }
+  //Strip percentage unit
+  @if unit($value) == "%" {
+    $value: ($value / 100%) * 1em;
+  }
+  //Strip any other unit rather than 0
+  @else if unit($value) != "em" {
+    $value: (stripUnit($value) / stripUnit($base)) * 1em;
+  }
+  //If the value is 0, then return 0
+  @else if $value == 0em {
+    $value: 0;
+  }
+  @return $value;
+}

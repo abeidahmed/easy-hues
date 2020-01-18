@@ -1,0 +1,48 @@
+// Default font family
+//
+$font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+  Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+  "Noto Color Emoji" !default;
+
+// Font size
+//
+$font-xs: calcRem(12px) !default;
+$font-sm: calcRem(14px) !default;
+$font-base: calcRem(16px) !default;
+$font-lg: calcRem(18px) !default;
+$font-xl: calcRem(20px) !default;
+$font-2xl: calcRem(24px) !default;
+$font-3xl: calcRem(30px) !default;
+$font-4xl: calcRem(36px) !default;
+$font-5xl: calcRem(48px) !default;
+$font-6xl: calcRem(64px) !default;
+
+// Font weight
+//
+$fw-hairline: 100 !default;
+$fw-thin: 200 !default;
+$fw-light: 300 !default;
+$fw-normal: 400 !default;
+$fw-medium: 500 !default;
+$fw-semibold: 600 !default;
+$fw-bold: 700 !default;
+$fw-extrabold: 800 !default;
+$fw-black: 900 !default;
+
+// Letter spacing
+//
+$tracking-tighter: calcEm(-0.8px) !default;
+$tracking-tight: calcEm(-0.4px) !default;
+$tracking-normal: calcEm(0px) !default;
+$tracking-wide: calcEm(0.4px) !default;
+$tracking-wider: calcEm(0.8px) !default;
+$tracking-widest: calcEm(1.6px) !default;
+
+// Line Height
+//
+$leading-none: 1 !default;
+$leading-tight: 1.25 !default;
+$leading-snug: 1.375 !default;
+$leading-normal: 1.5 !default;
+$leading-relaxed: 1.625 !default;
+$leading-loose: 2 !default;
