@@ -2,47 +2,47 @@
 //
 $font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
   Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-  "Noto Color Emoji" !default;
+  "Noto Color Emoji";
 
 // Font size
 //
-$font-xs: calcRem(12px) !default;
-$font-sm: calcRem(14px) !default;
-$font-base: calcRem(16px) !default;
-$font-lg: calcRem(18px) !default;
-$font-xl: calcRem(20px) !default;
-$font-2xl: calcRem(24px) !default;
-$font-3xl: calcRem(30px) !default;
-$font-4xl: calcRem(36px) !default;
-$font-5xl: calcRem(48px) !default;
-$font-6xl: calcRem(64px) !default;
+$font-xs: calcRem(12px);
+$font-sm: calcRem(14px);
+$font-base: calcRem(16px);
+$font-lg: calcRem(18px);
+$font-xl: calcRem(20px);
+$font-2xl: calcRem(24px);
+$font-3xl: calcRem(30px);
+$font-4xl: calcRem(36px);
+$font-5xl: calcRem(48px);
+$font-6xl: calcRem(64px);
 
 // Font weight
 //
-$weight-hairline: 100 !default;
-$weight-thin: 200 !default;
-$weight-light: 300 !default;
-$weight-normal: 400 !default;
-$weight-medium: 500 !default;
-$weight-semibold: 600 !default;
-$weight-bold: 700 !default;
-$weight-extrabold: 800 !default;
-$weight-black: 900 !default;
+$weight-hairline: 100;
+$weight-thin: 200;
+$weight-light: 300;
+$weight-normal: 400;
+$weight-medium: 500;
+$weight-semibold: 600;
+$weight-bold: 700;
+$weight-extrabold: 800;
+$weight-black: 900;
 
 // Letter spacing
 //
-$tracking-tighter: calcEm(-0.8px) !default;
-$tracking-tight: calcEm(-0.4px) !default;
-$tracking-normal: calcEm(0px) !default;
-$tracking-wide: calcEm(0.4px) !default;
-$tracking-wider: calcEm(0.8px) !default;
-$tracking-widest: calcEm(1.6px) !default;
+$tracking-tighter: calcEm(-0.8px);
+$tracking-tight: calcEm(-0.4px);
+$tracking-normal: calcEm(0px);
+$tracking-wide: calcEm(0.4px);
+$tracking-wider: calcEm(0.8px);
+$tracking-widest: calcEm(1.6px);
 
 // Line Height
 //
-$leading-none: 1 !default;
-$leading-tight: 1.25 !default;
-$leading-snug: 1.375 !default;
-$leading-normal: 1.5 !default;
-$leading-relaxed: 1.625 !default;
-$leading-loose: 2 !default;
+$leading-none: 1;
+$leading-tight: 1.25;
+$leading-snug: 1.375;
+$leading-normal: 1.5;
+$leading-relaxed: 1.625;
+$leading-loose: 2;

@@ -1,7 +1,7 @@
 /// @author Abeid Ahmed
 ///
 
-$global-font-size: 1rem !default;
+$global-font-size: 1rem;
 
 /// Strip unit
 /// @param {number} $num - (e.g. 24px, 1rem, 2em, etc)
@@ -11,7 +11,7 @@ $global-font-size: 1rem !default;
   @return $num / ($num * 0 + 1);
 }
 
-$stripped-font-size: stripUnit($global-font-size) * 16px !default;
+$stripped-font-size: stripUnit($global-font-size) * 16px;
 
 /// Convert any unit to rem
 /// @param {number} $value - number in any unit (e.g. 14px, 12px, 2em)

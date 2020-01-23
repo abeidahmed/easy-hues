@@ -6,7 +6,7 @@ $breakpoints: (
   md: $bp-md,
   lg: $bp-lg,
   xl: $bp-xl
-) !default;
+);
 
 // Container width for edges on the screen
 //
@@ -16,7 +16,7 @@ $container-width: (
   md: $md-margin-x,
   lg: $lg-margin-x,
   xl: $xl-margin-x
-) !default;
+);
 
 @if nth(map-values($breakpoints), 1) != 0 {
   @error 'The first key in the $breakpoints map must have a value of "0".';
