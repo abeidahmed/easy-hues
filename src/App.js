@@ -1,13 +1,10 @@
 import React from "react";
 
 import "./graspcss/graspcss.scss";
+import Home from "./components/Home";
 
-function App() {
-  return (
-    <div className="App container">
-      <h1 className="title">Hello from Grasp CSS!</h1>
-    </div>
-  );
-}
+const App = () => {
+  return <Home />;
+};
 
 export default App;

@@ -1,0 +1,38 @@
+.about-container {
+  margin-top: $space-8;
+}
+
+.about-container-inner {
+  margin-top: $space-10;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+}
+
+.about-title {
+  font-size: $font-lg;
+  color: $gray-900;
+  font-weight: $weight-semibold;
+  margin-top: $space-2;
+}
+.about-desc {
+  margin-top: $space-3;
+  color: $gray-600;
+  line-height: $leading-normal;
+}
+
+@include breakpoint(lg, up) {
+  .about-container-wrapper {
+    display: flex;
+    margin-left: -$space-3;
+    margin-right: -$space-3;
+  }
+
+  .about-container-inner {
+    margin-top: 0;
+    width: $space-1-3;
+    padding-left: $space-3;
+    padding-right: $space-3;
+  }
+}

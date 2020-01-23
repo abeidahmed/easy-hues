@@ -1,0 +1,105 @@
+.sub {
+  margin-top: $space-8;
+}
+
+.sub-container {
+  background-color: $indigo-100;
+  border-radius: $rounded-lg;
+}
+
+.sub-wrapper {
+  padding: $space-5;
+}
+
+.sub-title {
+  color: $indigo-900;
+  font-size: $font-2xl;
+  font-weight: $weight-bold;
+}
+
+.sub-desc {
+  margin-top: $space-5;
+  color: $indigo-700;
+  font-size: $font-lg;
+}
+
+.sub-field {
+  margin-top: $space-6;
+}
+
+.sub-field-inner {
+  position: relative;
+}
+
+.sub-input {
+  height: $space-12;
+  border-radius: $rounded-lg;
+  border: 1px solid $indigo-200;
+  width: 100%;
+  display: block;
+  padding-left: $space-4;
+
+  &:focus {
+    border-color: $indigo-900;
+  }
+
+  &::placeholder {
+    color: $gray-700;
+    font-size: $font-sm;
+  }
+}
+
+.sub-button-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+.sub-button {
+  height: 38px;
+  margin-right: $space-1;
+  background-color: $gray-800;
+  border-radius: $rounded;
+  font-weight: $weight-semibold;
+  color: $white;
+  font-size: $font-sm;
+  border: none;
+  padding: 0 $space-4;
+  transition: 200ms ease;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.sub-policy {
+  margin-top: $space-4;
+  color: $indigo-600;
+  font-size: $font-sm;
+  line-height: $leading-normal;
+
+  a {
+    color: $indigo-900;
+    font-weight: $weight-semibold;
+    text-decoration: underline;
+  }
+}
+
+@include breakpoint(lg, up) {
+  .sub-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .sub-header {
+    width: $space-3-5;
+  }
+
+  .sub-field {
+    width: $space-2-5;
+  }
+}

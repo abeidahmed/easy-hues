@@ -1,0 +1,121 @@
+.service {
+  background-color: $gray-100;
+  margin-top: $space-8;
+}
+
+.service-wrapper {
+  padding: $space-12 0;
+}
+
+.service-title {
+  font-size: $font-3xl;
+  font-weight: $weight-bold;
+  color: $gray-900;
+  text-align: center;
+}
+
+.service-desc {
+  margin-top: $space-4;
+  color: $gray-600;
+  font-size: $font-lg;
+  line-height: $leading-normal;
+  text-align: center;
+}
+
+.service-inner {
+  margin-top: $space-16;
+}
+
+.service-inner-title {
+  color: $gray-900;
+  font-size: $font-2xl;
+  font-weight: $weight-bold;
+}
+
+.service-inner-desc {
+  margin-top: $space-4;
+  color: $gray-600;
+  line-height: $leading-normal;
+}
+
+.service-offer-container {
+  margin-top: $space-8;
+}
+
+.service-offer-wrapper {
+  display: flex;
+  margin-left: -$space-3;
+  margin-right: -$space-3;
+  margin-top: $space-4;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+}
+
+.service-offer-left,
+.service-offer-right {
+  padding-left: $space-3;
+  padding-right: $space-4;
+}
+
+.service-offer-title {
+  color: $gray-900;
+  font-weight: $weight-semibold;
+}
+
+.service-offer-desc {
+  margin-top: $space-2;
+  color: $gray-600;
+  font-size: $font-sm;
+  line-height: $leading-normal;
+}
+
+.svg-container svg {
+  width: 100%;
+  margin-top: $space-8;
+}
+
+@include breakpoint(md, up) {
+  .svg-container {
+    width: $space-3-4;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@include breakpoint(lg, up) {
+  .service-title {
+    font-size: $font-4xl;
+  }
+  .service-inner {
+    display: flex;
+    align-items: center;
+    margin-left: -$space-3;
+    margin-right: -$space-3;
+  }
+  .service-inner-left,
+  .service-inner-right {
+    width: $space-1-2;
+    padding-left: $space-3;
+    padding-right: $space-3;
+  }
+  .order-1 {
+    order: 1;
+  }
+  .order-2 {
+    order: 2;
+  }
+  .service-inner-title {
+    font-size: $font-3xl;
+  }
+  .service-inner-desc {
+    font-size: $font-lg;
+  }
+  .service-offer-title {
+    font-size: $font-lg;
+  }
+  .service-offer-desc {
+    font-size: $font-base;
+  }
+}

@@ -1,0 +1,72 @@
+.property {
+  background-color: $gray-800;
+}
+
+.property-wrapper {
+  padding: $space-12 0;
+}
+
+.property-intro {
+  font-size: $font-3xl;
+  color: $white;
+  text-align: center;
+  font-weight: $weight-bold;
+}
+
+.property-intro-info {
+  font-size: $font-lg;
+  color: $gray-400;
+  text-align: center;
+  margin-top: $space-4;
+  line-height: $leading-normal;
+}
+
+.property-container {
+  margin-top: $space-12;
+}
+
+.property-title {
+  font-size: $font-lg;
+  font-weight: $weight-semibold;
+  color: $white;
+}
+
+.property-info {
+  margin-top: $space-6;
+}
+
+.property-desc {
+  display: flex;
+  align-items: center;
+  margin-top: $space-4;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+}
+
+.property-name {
+  margin-left: $space-4;
+  color: $gray-400;
+}
+
+@include breakpoint(sm, up) {
+  .property-flexed-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -$space-6;
+    margin-right: -$space-6;
+  }
+
+  .property-container {
+    width: $space-1-2;
+    padding-left: $space-6;
+    padding-right: $space-6;
+  }
+}
+
+@include breakpoint(lg, up) {
+  .property-container {
+    width: $space-1-4;
+  }
+}

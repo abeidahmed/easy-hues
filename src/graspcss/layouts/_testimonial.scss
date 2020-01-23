@@ -1,0 +1,65 @@
+.test {
+  background-color: $indigo-800;
+}
+
+.test-main {
+  padding: $space-12 0;
+  border-bottom: 2px solid $indigo-900;
+
+  &:last-of-type {
+    border-bottom-color: transparent;
+  }
+}
+
+.test-container {
+  margin-top: $space-8;
+}
+
+.test-desc {
+  color: $white;
+  line-height: $leading-normal;
+  font-weight: $weight-medium;
+}
+
+.test-inner {
+  margin-top: $space-4;
+}
+
+.test-name {
+  display: block;
+  color: $white;
+  font-weight: $weight-semibold;
+  letter-spacing: $tracking-wide;
+}
+
+.test-position {
+  display: block;
+  color: $indigo-200;
+  margin-top: $space-1;
+  font-weight: $weight-semibold;
+  letter-spacing: $tracking-wide;
+}
+
+@include breakpoint(md, up) {
+  .test-wrapper {
+    display: flex;
+    margin-left: -$space-6;
+    margin-right: -$space-6;
+  }
+
+  .test-main {
+    width: $space-1-2;
+    padding-left: $space-6;
+    padding-right: $space-6;
+    border-bottom: 0px;
+    border-right: 2px solid $indigo-900;
+
+    &:last-of-type {
+      border-right-color: transparent;
+    }
+  }
+
+  .test-desc {
+    font-size: $font-lg;
+  }
+}
