@@ -1,0 +1,20 @@
+.header {
+  position: sticky;
+  top: 0;
+  box-shadow: $shadow;
+  background-color: $white;
+  z-index: z(navbar);
+
+  .menu-toggle-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: $space-12;
+  }
+
+  .menu-toggle {
+    background: none;
+    border: 0;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,162 @@
+.hero-container-inner {
+  padding: $space-12 0;
+
+  .hero-subtitle {
+    color: $gray-600;
+    text-transform: uppercase;
+    font-weight: $weight-semibold;
+    letter-spacing: $tracking-wide;
+  }
+
+  .hero-title {
+    margin-top: $space-3;
+    color: $gray-900;
+    font-weight: $weight-bold;
+    font-size: $font-4xl;
+
+    span {
+      color: $indigo-600;
+    }
+  }
+
+  .hero-desc {
+    margin-top: $space-5;
+    color: $gray-600;
+    font-size: $font-lg;
+    line-height: $leading-normal;
+  }
+}
+
+@include breakpoint(sm, up) {
+  .hero-container-inner {
+    .hero-title {
+      font-size: $font-5xl;
+    }
+
+    .hero-desc {
+      font-size: $font-xl;
+    }
+  }
+}
+
+@include breakpoint(md, up) {
+  .hero-container-inner .hero-title {
+    font-size: 56px;
+  }
+}
+
+@include breakpoint(lg, up) {
+  .hero-container-inner {
+    display: flex;
+    margin-left: -$space-3;
+    margin-right: -$space-3;
+
+    .hero-left {
+      width: 50%;
+      padding-left: $space-3;
+      padding-right: $space-3;
+    }
+
+    .hero-right {
+      width: 50%;
+      padding-left: $space-3;
+      padding-right: $space-3;
+    }
+  }
+}
+//Subscribe field
+.subscribe-field {
+  margin-top: $space-10;
+
+  &-intro {
+    color: $gray-900;
+    font-weight: $weight-semibold;
+  }
+
+  &-inner {
+    margin-top: $space-5;
+    position: relative;
+    display: flex;
+  }
+
+  .subscribe-input {
+    height: 60px;
+    border-radius: $rounded-lg;
+    border: 1px solid $gray-400;
+    padding-left: $space-4;
+    display: block;
+    width: 100%;
+
+    &:focus {
+      border-color: $gray-900;
+    }
+
+    &::placeholder {
+      color: $gray-700;
+    }
+  }
+
+  .subscribe-button-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    padding-right: $space-1;
+  }
+
+  .subscribe-button {
+    height: 50px;
+    background-color: $gray-800;
+    border-radius: $rounded;
+    border: none;
+    padding: 0 $space-6;
+    color: $white;
+    cursor: pointer;
+    font-weight: $weight-semibold;
+    letter-spacing: $tracking-wide;
+    transition: 200ms ease;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  .subscribe-policy {
+    color: $gray-600;
+    font-size: $font-sm;
+    margin-top: $space-6;
+
+    a {
+      color: $gray-900;
+      text-decoration: underline;
+      font-weight: $weight-semibold;
+      letter-spacing: $tracking-wide;
+    }
+  }
+}
+
+@include breakpoint(sm, up) {
+  .subscribe-field .subscribe-field-inner {
+    max-width: 438px;
+  }
+}
+//SVG
+.svg-container {
+  svg {
+    width: 100%;
+  }
+}
+
+@include breakpoint(sm, up) {
+  .svg-container svg {
+    margin-top: $space-10;
+  }
+}
+
+@include breakpoint(lg, up) {
+  .svg-container svg {
+    margin-top: 0;
+  }
+}

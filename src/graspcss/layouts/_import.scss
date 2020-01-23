@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:400,500,600,700&display=swap");
+
+body {
+  font-family: $font-family;
+}
+
+@import "header";
+@import "sidebar";
+@import "hero";
