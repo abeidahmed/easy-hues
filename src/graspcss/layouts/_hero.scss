@@ -1,39 +1,37 @@
-.hero-container-inner {
+.hero-wrapper {
   padding: $space-12 0;
+}
 
-  .hero-subtitle {
-    text-transform: uppercase;
-    font-weight: $weight-semibold;
-    letter-spacing: $tracking-wide;
-  }
+.hero-subtitle {
+  text-transform: uppercase;
+  font-weight: $weight-semibold;
+  letter-spacing: $tracking-wide;
+}
 
-  .hero-title {
-    margin-top: $space-3;
-    font-weight: $weight-extrabold;
-    font-size: $font-4xl;
-  }
+.hero-title {
+  margin-top: $space-3;
+  font-weight: $weight-extrabold;
+  font-size: $font-4xl;
+}
 
-  .hero-desc {
-    margin-top: $space-5;
-    font-size: $font-lg;
-    line-height: $leading-normal;
-  }
+.hero-desc {
+  margin-top: $space-5;
+  font-size: $font-lg;
+  line-height: $leading-normal;
 }
 
 @include breakpoint(sm, up) {
-  .hero-container-inner {
-    .hero-title {
-      font-size: $font-5xl;
-    }
+  .hero-title {
+    font-size: $font-5xl;
+  }
 
-    .hero-desc {
-      font-size: $font-xl;
-    }
+  .hero-desc {
+    font-size: $font-xl;
   }
 }
 
 @include breakpoint(md, up) {
-  .hero-container-inner .hero-title {
+  .hero-title {
     font-size: 56px;
   }
 }

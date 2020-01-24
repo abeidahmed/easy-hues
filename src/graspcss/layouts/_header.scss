@@ -65,6 +65,13 @@
   }
 
   &-text {
+    display: none;
+  }
+}
+
+@include breakpoint(md, up) {
+  .hues-toggle-text {
+    display: block;
     margin-left: $space-3;
   }
 }
