@@ -1,5 +1,4 @@
 .service {
-  background-color: $gray-100;
   margin-top: $space-8;
 }
 
@@ -10,13 +9,11 @@
 .service-title {
   font-size: $font-3xl;
   font-weight: $weight-bold;
-  color: $gray-900;
   text-align: center;
 }
 
 .service-desc {
   margin-top: $space-4;
-  color: $gray-600;
   font-size: $font-lg;
   line-height: $leading-normal;
   text-align: center;
@@ -27,14 +24,12 @@
 }
 
 .service-inner-title {
-  color: $gray-900;
   font-size: $font-2xl;
   font-weight: $weight-bold;
 }
 
 .service-inner-desc {
   margin-top: $space-4;
-  color: $gray-600;
   line-height: $leading-normal;
 }
 
@@ -60,13 +55,11 @@
 }
 
 .service-offer-title {
-  color: $gray-900;
   font-weight: $weight-semibold;
 }
 
 .service-offer-desc {
   margin-top: $space-2;
-  color: $gray-600;
   font-size: $font-sm;
   line-height: $leading-normal;
 }
