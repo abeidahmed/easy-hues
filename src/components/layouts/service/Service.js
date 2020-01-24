@@ -1,5 +1,7 @@
 import React from "react";
 
+import SectionHues from "../global/SectionHues";
+
 import SVG1 from "./SVG1";
 import SVG2 from "./SVG2";
 
@@ -226,6 +228,7 @@ const Service = props => {
             </div>
             <SVG2 />
           </div>
+          <SectionHues colorChange={props.colorChange} />
         </div>
       </div>
     </section>

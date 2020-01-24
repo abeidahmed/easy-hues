@@ -31,10 +31,10 @@ class Home extends Component {
     ],
     aboutSection: [
       {
-        "Icon color": "#5a67d8",
-        "Icon background color": "#ebf4ff",
         "Heading color": "#1a202c",
         "Text color": "#718096",
+        "Icon color": "#5a67d8",
+        "Icon background color": "#ebf4ff",
         "Section color": "#fff"
       }
     ],

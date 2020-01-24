@@ -1,5 +1,7 @@
 import React from "react";
 
+import SectionHues from "../global/SectionHues";
+
 const Property = props => {
   return (
     <section style={{ backgroundColor: props.colorChange["Section color"] }} className="property">
@@ -282,6 +284,7 @@ const Property = props => {
               </div>
             </div>
           </div>
+          <SectionHues colorChange={props.colorChange} />
         </div>
       </div>
     </section>

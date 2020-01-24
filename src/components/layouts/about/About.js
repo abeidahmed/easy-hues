@@ -1,5 +1,7 @@
 import React from "react";
 
+import SectionHues from "../global/SectionHues";
+
 const About = props => {
   return (
     <section
@@ -78,6 +80,8 @@ const About = props => {
             </p>
           </div>
         </div>
+
+        <SectionHues colorChange={props.colorChange} />
       </div>
     </section>
   );

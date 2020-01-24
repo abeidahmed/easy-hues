@@ -1,5 +1,7 @@
 import React from "react";
 
+import SectionHues from "../global/SectionHues";
+
 const FooterSubscribe = props => {
   return (
     <section className="sub">
@@ -41,6 +43,7 @@ const FooterSubscribe = props => {
               </p>
             </div>
           </div>
+          <SectionHues colorChange={props.colorChange} />
         </div>
       </div>
     </section>
