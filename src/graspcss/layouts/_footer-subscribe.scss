@@ -3,7 +3,6 @@
 }
 
 .sub-container {
-  background-color: $indigo-100;
   border-radius: $rounded-lg;
 }
 
@@ -12,14 +11,12 @@
 }
 
 .sub-title {
-  color: $indigo-900;
   font-size: $font-2xl;
   font-weight: $weight-bold;
 }
 
 .sub-desc {
   margin-top: $space-5;
-  color: $indigo-700;
   font-size: $font-lg;
 }
 
@@ -62,10 +59,8 @@
 .sub-button {
   height: 38px;
   margin-right: $space-1;
-  background-color: $gray-800;
   border-radius: $rounded;
   font-weight: $weight-semibold;
-  color: $white;
   font-size: $font-sm;
   border: none;
   padding: 0 $space-4;
@@ -79,12 +74,10 @@
 
 .sub-policy {
   margin-top: $space-4;
-  color: $indigo-600;
   font-size: $font-sm;
   line-height: $leading-normal;
 
   a {
-    color: $indigo-900;
     font-weight: $weight-semibold;
     text-decoration: underline;
   }

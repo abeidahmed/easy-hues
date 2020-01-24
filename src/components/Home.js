@@ -5,6 +5,7 @@ import AboutColors from "./colors/AboutColors";
 import ServiceColors from "./colors/ServiceColors";
 import TestimonialColors from "./colors/TestimonialColors";
 import PropertyColors from "./colors/PropertyColors";
+import footerSubscribeColors from "./colors/FooterSubscribeColors";
 
 import Hero from "./layouts/hero/Hero";
 import About from "./layouts/about/About";
@@ -63,6 +64,16 @@ class Home extends Component {
         "Text color": "#cbd5e0",
         "Icon color": "#7f9cf5",
         "Section color": "#2d3748"
+      }
+    ],
+    footerSubscribeSection: [
+      {
+        "Heading color": "#3c366b",
+        "Heading accent color": "#4c51bf",
+        "Text color": "#5a67d8",
+        "Button color": "#2d3748",
+        "Button text color": "#fff",
+        "Section color": "#ebf4ff"
       }
     ]
   };
@@ -157,6 +168,23 @@ class Home extends Component {
       }
       return this.setState.propertySection;
     });
+    footerSubscribeColors.map(color => {
+      if (id === color.id) {
+        this.setState({
+          footerSubscribeSection: [
+            {
+              "Heading color": color.headingColor,
+              "Heading accent color": color.headingAccentColor,
+              "Text color": color.textColor,
+              "Button color": color.buttonColor,
+              "Button text color": color.buttonTextColor,
+              "Section color": color.sectionColor
+            }
+          ]
+        });
+      }
+      return this.setState.footerSubscribeSection;
+    });
   };
   render() {
     return (
@@ -198,7 +226,7 @@ class Home extends Component {
         <Service colorChange={this.state.serviceSection[0]} />
         <Testimonial colorChange={this.state.testimonialSection[0]} />
         <Property colorChange={this.state.propertySection[0]} />
-        <FooterSubscribe />
+        <FooterSubscribe colorChange={this.state.footerSubscribeSection[0]} />
         <Footer />
       </div>
     );

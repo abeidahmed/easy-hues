@@ -1,7 +1,6 @@
 import React from "react";
 
 const Property = props => {
-  console.log(props.colorChange);
   return (
     <section style={{ backgroundColor: props.colorChange["Section color"] }} className="property">
       <div className="container">
