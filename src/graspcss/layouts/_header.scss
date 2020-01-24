@@ -1,20 +1,34 @@
 .header {
   position: sticky;
   top: 0;
-  box-shadow: $shadow;
   background-color: $white;
   z-index: z(navbar);
 
   .menu-toggle-container {
+    padding: $space-10 0;
     display: flex;
     width: 100%;
     align-items: center;
     height: $space-12;
+    justify-content: space-between;
+  }
+}
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  z-index: z(toggle);
+
+  svg {
+    width: $space-6;
+    color: $gray-900;
   }
 
-  .menu-toggle {
-    background: none;
-    border: 0;
-    cursor: pointer;
+  span {
+    margin-left: $space-3;
+    font-weight: $weight-semibold;
+    color: $gray-900;
   }
 }

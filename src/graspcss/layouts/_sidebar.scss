@@ -1,6 +1,6 @@
 .sidebar-container {
   max-width: 200px;
-  margin-top: $space-12;
+  margin-top: $space-16;
   left: 0;
   height: 100%;
   position: fixed;
@@ -33,6 +33,14 @@
     border-bottom: 1px solid $gray-300;
     width: 100%;
     cursor: pointer;
+    justify-content: center;
+    border-radius: $rounded;
+    outline: none;
+    transition: 100ms ease;
+
+    &:hover {
+      background-color: $gray-200;
+    }
 
     &:last-of-type {
       border-bottom-color: transparent;

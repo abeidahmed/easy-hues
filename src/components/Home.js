@@ -69,12 +69,15 @@ class Home extends Component {
           <div className="container">
             <div className="menu-toggle-container">
               <button onClick={this.handleSidebar} className="menu-toggle">
-                <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M0 4.8a1.2 1.2 0 011.2-1.2h21.6a1.2 1.2 0 010 2.4H1.2A1.2 1.2 0 010 4.8zM0 12a1.2 1.2 0 011.2-1.2h21.6a1.2 1.2 0 010 2.4H1.2A1.2 1.2 0 010 12zm0 7.2A1.2 1.2 0 011.2 18h21.6a1.2 1.2 0 010 2.4H1.2A1.2 1.2 0 010 19.2z"
-                    fill="#1F1235"
-                  />
+                <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 74">
+                  <g data-name="Layer 2">
+                    <path
+                      d="M2 12h49.2a10 10 0 0019.6 0H80a2 2 0 000-4h-9.2a10 10 0 00-19.6 0H2a2 2 0 000 4zm59-8a6 6 0 11-6 6 6 6 0 016-6zm19 31H30.8a10 10 0 00-19.6 0H2a2 2 0 000 4h9.2a10 10 0 0019.6 0H80a2 2 0 000-4zm-59 8a6 6 0 116-6 6 6 0 01-6 6zm59 19H50.8a10 10 0 00-19.6 0H2a2 2 0 000 4h29.2a10 10 0 0019.6 0H80a2 2 0 000-4zm-39 8a6 6 0 116-6 6 6 0 01-6 6z"
+                      data-name="Layer 1"
+                    />
+                  </g>
                 </svg>
+                <span>View color palette</span>
               </button>
             </div>
           </div>
