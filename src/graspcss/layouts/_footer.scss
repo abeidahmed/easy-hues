@@ -1,5 +1,8 @@
-.footer-wrapper {
+.footer-wrapper-container {
   padding: $space-12 0;
+}
+
+.footer-wrapper {
   display: flex;
   flex-wrap: wrap;
   margin-left: -$space-6;
@@ -51,6 +54,21 @@
     margin-top: 0;
   }
 }
+
+.footer-brand {
+  margin-top: $space-8;
+
+  svg {
+    width: $space-12;
+    animation: logo-spin infinite 10s linear;
+  }
+
+  span {
+    font-size: $font-sm;
+    display: block;
+    margin-top: $space-2;
+  }
+}
 // Copyright text
 .footer-copyright {
   padding-bottom: $space-10;
@@ -67,5 +85,31 @@
 
   .social-link-container {
     margin-top: 0;
+  }
+}
+
+@include breakpoint(lg, up) {
+  .footer-wrapper-container {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .footer-wrapper {
+    order: 2;
+    width: $space-7-12;
+  }
+
+  .footer-brand {
+    margin-top: 0;
+    width: $space-5-12;
+  }
+}
+// Animation
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
