@@ -20,6 +20,29 @@
   line-height: $leading-normal;
 }
 
+.hero-right {
+  max-width: 580px;
+  margin-top: $space-8;
+  margin-left: auto;
+  margin-right: auto;
+
+  img {
+    border-radius: $rounded-lg;
+    box-shadow: $shadow-2xl;
+  }
+}
+
+.hero-right-inner {
+  position: relative;
+
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 @include breakpoint(sm, up) {
   .hero-title {
     font-size: $font-5xl;
@@ -39,20 +62,19 @@
 @include breakpoint(lg, up) {
   .hero-container-inner {
     display: flex;
-    margin-left: -$space-3;
-    margin-right: -$space-3;
+    margin-left: -$space-4;
+    margin-right: -$space-4;
+  }
+  .hero-left,
+  .hero-right {
+    width: $space-1-2;
+    padding-left: $space-4;
+    padding-right: $space-4;
+  }
 
-    .hero-left {
-      width: 50%;
-      padding-left: $space-3;
-      padding-right: $space-3;
-    }
-
-    .hero-right {
-      width: 50%;
-      padding-left: $space-3;
-      padding-right: $space-3;
-    }
+  .hero-right {
+    max-width: 100%;
+    padding-left: $space-10;
   }
 }
 //Subscribe field
