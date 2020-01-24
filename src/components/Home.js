@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 
 import HeroColors from "./colors/HeroColors";
+import AboutColors from "./colors/AboutColors";
+
 import Hero from "./layouts/hero/Hero";
 import About from "./layouts/about/About";
 import Service from "./layouts/service/Service";
@@ -19,6 +21,15 @@ class Home extends Component {
         "Text color": "#718096",
         "Button color": "#2d3748",
         "Button text color": "#fff",
+        "Section color": "#fff"
+      }
+    ],
+    aboutSection: [
+      {
+        "Icon color": "#5a67d8",
+        "Icon background color": "#ebf4ff",
+        "Heading color": "#1a202c",
+        "Text color": "#718096",
         "Section color": "#fff"
       }
     ]
@@ -47,6 +58,22 @@ class Home extends Component {
         });
       }
       return this.setState.heroSection;
+    });
+    AboutColors.map(color => {
+      if (id === color.id) {
+        this.setState({
+          aboutSection: [
+            {
+              "Icon color": color.iconColor,
+              "Icon background color": color.iconBackgroundColor,
+              "Heading color": color.headingColor,
+              "Text color": color.textColor,
+              "Section color": color.sectionColor
+            }
+          ]
+        });
+      }
+      return this.setState.aboutSection;
     });
   };
   render() {
@@ -85,7 +112,7 @@ class Home extends Component {
           </div>
         </header>
         <Hero colorChange={this.state.heroSection[0]} />
-        <About />
+        <About colorChange={this.state.aboutSection[0]} />
         <Service />
         <Testimonial />
         <Property />
