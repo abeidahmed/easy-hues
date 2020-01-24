@@ -31,7 +31,6 @@
 }
 
 .nav-title {
-  color: $gray-600;
   text-transform: uppercase;
   font-size: $font-sm;
   font-weight: $weight-bold;
@@ -45,7 +44,6 @@
 .footer-links {
   text-decoration: none;
   font-size: $font-sm;
-  color: $gray-600;
   display: block;
   margin-top: $space-4;
 
@@ -58,7 +56,6 @@
   padding-bottom: $space-10;
 
   .copyright-text {
-    color: $gray-600;
     font-size: $font-sm;
   }
 }

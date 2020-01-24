@@ -5,7 +5,8 @@ import AboutColors from "./colors/AboutColors";
 import ServiceColors from "./colors/ServiceColors";
 import TestimonialColors from "./colors/TestimonialColors";
 import PropertyColors from "./colors/PropertyColors";
-import footerSubscribeColors from "./colors/FooterSubscribeColors";
+import FooterSubscribeColors from "./colors/FooterSubscribeColors";
+import FooterColors from "./colors/FooterColors";
 
 import Hero from "./layouts/hero/Hero";
 import About from "./layouts/about/About";
@@ -74,6 +75,14 @@ class Home extends Component {
         "Button color": "#2d3748",
         "Button text color": "#fff",
         "Section color": "#ebf4ff"
+      }
+    ],
+    footerSection: [
+      {
+        "Heading color": "#718096",
+        "Text color": "#718096",
+        "Icon color": "#a0aec0",
+        "Section color": "#fff"
       }
     ]
   };
@@ -168,7 +177,7 @@ class Home extends Component {
       }
       return this.setState.propertySection;
     });
-    footerSubscribeColors.map(color => {
+    FooterSubscribeColors.map(color => {
       if (id === color.id) {
         this.setState({
           footerSubscribeSection: [
@@ -184,6 +193,21 @@ class Home extends Component {
         });
       }
       return this.setState.footerSubscribeSection;
+    });
+    FooterColors.map(color => {
+      if (id === color.id) {
+        this.setState({
+          footerSection: [
+            {
+              "Heading color": color.headingColor,
+              "Text color": color.textColor,
+              "Icon color": color.iconColor,
+              "Section color": color.sectionColor
+            }
+          ]
+        });
+      }
+      return this.setState.footerSection;
     });
   };
   render() {
@@ -227,7 +251,7 @@ class Home extends Component {
         <Testimonial colorChange={this.state.testimonialSection[0]} />
         <Property colorChange={this.state.propertySection[0]} />
         <FooterSubscribe colorChange={this.state.footerSubscribeSection[0]} />
-        <Footer />
+        <Footer colorChange={this.state.footerSection[0]} />
       </div>
     );
   }
