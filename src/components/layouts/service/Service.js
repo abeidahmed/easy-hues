@@ -228,7 +228,7 @@ const Service = props => {
             </div>
             <SVG2 />
           </div>
-          <SectionHues colorChange={props.colorChange} />
+          <SectionHues huesOpen={props.huesOpen} colorChange={props.colorChange} />
         </div>
       </div>
     </section>

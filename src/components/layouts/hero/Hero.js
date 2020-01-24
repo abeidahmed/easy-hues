@@ -56,7 +56,7 @@ const Hero = props => {
             </div>
           </div>
         </div>
-        <SectionHues colorChange={props.colorChange} />
+        <SectionHues huesOpen={props.huesOpen} colorChange={props.colorChange} />
       </div>
     </section>
   );

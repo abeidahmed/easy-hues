@@ -131,7 +131,7 @@ const Testimonial = props => {
               </div>
             </div>
           </div>
-          <SectionHues colorChange={props.colorChange} />
+          <SectionHues huesOpen={props.huesOpen} colorChange={props.colorChange} />
         </div>
       </div>
     </section>

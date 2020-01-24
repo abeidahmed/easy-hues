@@ -160,7 +160,7 @@ const Footer = props => {
           <p style={{ color: props.colorChange["Text color"] }} className="copyright-text">
             &copy; 2020 Easy Hues, All rights reserved.
           </p>
-          <SectionHues colorChange={props.colorChange} />
+          <SectionHues huesOpen={props.huesOpen} colorChange={props.colorChange} />
         </div>
       </div>
     </footer>

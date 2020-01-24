@@ -20,6 +20,14 @@
   border: 0;
   cursor: pointer;
   z-index: z(toggle);
+  padding: $space-2 $space-3;
+  outline: none;
+  border: 1px solid transparent;
+
+  &:focus {
+    border-color: $gray-900;
+    border-radius: $rounded;
+  }
 
   svg {
     width: $space-6;
@@ -30,5 +38,30 @@
     margin-left: $space-3;
     font-weight: $weight-semibold;
     color: $gray-900;
+  }
+}
+
+.hues-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: $weight-semibold;
+  display: flex;
+  align-items: center;
+  padding: $space-2 $space-3;
+  outline: none;
+  border: 1px solid transparent;
+
+  &:focus {
+    border-color: $gray-900;
+    border-radius: $rounded;
+  }
+
+  svg {
+    height: $space-6;
+  }
+
+  span {
+    margin-left: $space-3;
   }
 }

@@ -81,7 +81,7 @@ const About = props => {
           </div>
         </div>
 
-        <SectionHues colorChange={props.colorChange} />
+        <SectionHues huesOpen={props.huesOpen} colorChange={props.colorChange} />
       </div>
     </section>
   );
