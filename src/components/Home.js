@@ -14,11 +14,12 @@ class Home extends Component {
     isOpen: false,
     heroSection: [
       {
-        "Heading color": "#1F1235",
-        "Text color": "#1B1425",
-        "Button color": "#FF6E6C",
-        "Button text color": "#1F1235",
-        "Section color": "#FFF"
+        "Heading color": "#1a202c",
+        "Heading accent color": "#5a67d8",
+        "Text color": "#718096",
+        "Button color": "#2d3748",
+        "Button text color": "#fff",
+        "Section color": "#fff"
       }
     ]
   };
@@ -36,6 +37,7 @@ class Home extends Component {
           heroSection: [
             {
               "Heading color": color.headingColor,
+              "Heading accent color": color.headingAccentColor,
               "Text color": color.textColor,
               "Button color": color.buttonColor,
               "Button text color": color.buttonTextColor,
@@ -82,7 +84,7 @@ class Home extends Component {
             </div>
           </div>
         </header>
-        <Hero />
+        <Hero colorChange={this.state.heroSection[0]} />
         <About />
         <Service />
         <Testimonial />
