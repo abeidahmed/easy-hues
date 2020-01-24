@@ -26,7 +26,7 @@
     align-items: center;
     height: $space-12;
     padding: 0 $space-3;
-    border: 2px solid $gray-900;
+    border: 2px solid $gray-700;
     border-radius: $rounded;
     background: none;
     cursor: pointer;
@@ -36,9 +36,8 @@
 
 .hues-display {
   padding: $space-3;
-  background-color: $red-500;
   border-radius: $rounded-full;
-  border: 2px solid $gray-800;
+  border: 2px solid;
 }
 
 .hues-info {
