@@ -1,7 +1,6 @@
 import React from "react";
 
 const Testimonial = props => {
-  console.log(props.colorChange);
   return (
     <section style={{ backgroundColor: props.colorChange["Section color"] }} className="test">
       <div className="container">

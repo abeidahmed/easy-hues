@@ -4,6 +4,7 @@ import HeroColors from "./colors/HeroColors";
 import AboutColors from "./colors/AboutColors";
 import ServiceColors from "./colors/ServiceColors";
 import TestimonialColors from "./colors/TestimonialColors";
+import PropertyColors from "./colors/PropertyColors";
 
 import Hero from "./layouts/hero/Hero";
 import About from "./layouts/about/About";
@@ -54,6 +55,14 @@ class Home extends Component {
         "Icon color": "#c3dafe",
         "Border color": "#3c366b",
         "Section color": "#434190"
+      }
+    ],
+    propertySection: [
+      {
+        "Heading color": "#fff",
+        "Text color": "#cbd5e0",
+        "Icon color": "#7f9cf5",
+        "Section color": "#2d3748"
       }
     ]
   };
@@ -133,6 +142,21 @@ class Home extends Component {
       }
       return this.setState.serviceSection;
     });
+    PropertyColors.map(color => {
+      if (id === color.id) {
+        this.setState({
+          propertySection: [
+            {
+              "Heading color": color.headingColor,
+              "Text color": color.textColor,
+              "Icon color": color.iconColor,
+              "Section color": color.sectionColor
+            }
+          ]
+        });
+      }
+      return this.setState.propertySection;
+    });
   };
   render() {
     return (
@@ -173,7 +197,7 @@ class Home extends Component {
         <About colorChange={this.state.aboutSection[0]} />
         <Service colorChange={this.state.serviceSection[0]} />
         <Testimonial colorChange={this.state.testimonialSection[0]} />
-        <Property />
+        <Property colorChange={this.state.propertySection[0]} />
         <FooterSubscribe />
         <Footer />
       </div>
