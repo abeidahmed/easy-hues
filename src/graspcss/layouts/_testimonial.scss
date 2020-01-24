@@ -22,7 +22,21 @@
 }
 
 .test-inner {
-  margin-top: $space-4;
+  margin-top: $space-10;
+  display: flex;
+  align-items: center;
+}
+
+.test-img {
+  width: $space-12;
+  img {
+    border-radius: $rounded-full;
+    border: 2px solid;
+  }
+}
+
+.test-details {
+  margin-left: $space-4;
 }
 
 .test-name {

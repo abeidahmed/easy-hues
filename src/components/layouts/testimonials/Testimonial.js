@@ -42,15 +42,24 @@ const Testimonial = props => {
                   eget tellus vulputate. Sed imperdiet eget nec lectus.
                 </p>
                 <div className="test-inner">
-                  <span style={{ color: props.colorChange["Text color"] }} className="test-name">
-                    Judith Black
-                  </span>
-                  <span
-                    style={{ color: props.colorChange["Text accent color"] }}
-                    className="test-position"
-                  >
-                    CEO, Tuple
-                  </span>
+                  <div className="test-img">
+                    <img
+                      style={{ borderColor: props.colorChange["Text accent color"] }}
+                      src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144&q=80"
+                      alt=""
+                    />
+                  </div>
+                  <div className="test-details">
+                    <span style={{ color: props.colorChange["Text color"] }} className="test-name">
+                      Judith Black
+                    </span>
+                    <span
+                      style={{ color: props.colorChange["Text accent color"] }}
+                      className="test-position"
+                    >
+                      CEO, Tuple
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -118,15 +127,24 @@ const Testimonial = props => {
                   eget tellus vulputate. Sed imperdiet eget nec lectus.
                 </p>
                 <div className="test-inner">
-                  <span style={{ color: props.colorChange["Text color"] }} className="test-name">
-                    Tiffany Bright
-                  </span>
-                  <span
-                    style={{ color: props.colorChange["Text accent color"] }}
-                    className="test-position"
-                  >
-                    Project Manager, Workcation
-                  </span>
+                  <div className="test-img">
+                    <img
+                      style={{ borderColor: props.colorChange["Text accent color"] }}
+                      src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=144&h=144&q=80"
+                      alt=""
+                    />
+                  </div>
+                  <div className="test-details">
+                    <span style={{ color: props.colorChange["Text color"] }} className="test-name">
+                      Tiffany Bright
+                    </span>
+                    <span
+                      style={{ color: props.colorChange["Text accent color"] }}
+                      className="test-position"
+                    >
+                      Project Manager, Workcation
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
