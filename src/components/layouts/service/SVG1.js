@@ -1,7 +1,6 @@
 import React from "react";
 
 const SVG1 = props => {
-  console.log(props.colorChange);
   return (
     <div className="svg-container service-inner-right">
       <svg viewBox="0 0 490 630" fill="none" xmlns="http://www.w3.org/2000/svg">

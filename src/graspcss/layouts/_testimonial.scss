@@ -1,10 +1,6 @@
-.test {
-  background-color: $indigo-800;
-}
-
 .test-main {
   padding: $space-12 0;
-  border-bottom: 2px solid $indigo-900;
+  border-bottom: 2px solid;
 
   &:last-of-type {
     border-bottom-color: transparent;
@@ -16,9 +12,10 @@
 }
 
 .test-desc {
-  color: $white;
+  font-size: $font-sm;
   line-height: $leading-normal;
   font-weight: $weight-medium;
+  letter-spacing: $tracking-wide;
 }
 
 .test-inner {
@@ -27,14 +24,12 @@
 
 .test-name {
   display: block;
-  color: $white;
   font-weight: $weight-semibold;
   letter-spacing: $tracking-wide;
 }
 
 .test-position {
   display: block;
-  color: $indigo-200;
   margin-top: $space-1;
   font-weight: $weight-semibold;
   letter-spacing: $tracking-wide;
@@ -52,7 +47,7 @@
     padding-left: $space-6;
     padding-right: $space-6;
     border-bottom: 0px;
-    border-right: 2px solid $indigo-900;
+    border-right: 2px solid;
 
     &:last-of-type {
       border-right-color: transparent;
@@ -60,6 +55,6 @@
   }
 
   .test-desc {
-    font-size: $font-lg;
+    font-size: $font-base;
   }
 }
