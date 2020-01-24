@@ -3,6 +3,7 @@
   top: 0;
   background-color: $white;
   z-index: z(navbar);
+  box-shadow: $shadow;
 
   .menu-toggle-container {
     padding: $space-10 0;
