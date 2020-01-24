@@ -46,8 +46,6 @@
   border: none;
   cursor: pointer;
   font-weight: $weight-semibold;
-  display: flex;
-  align-items: center;
   padding: $space-2 $space-3;
   outline: none;
   border: 1px solid transparent;
@@ -57,11 +55,16 @@
     border-radius: $rounded;
   }
 
+  &-inner {
+    display: flex;
+    align-items: center;
+  }
+
   svg {
     height: $space-6;
   }
 
-  span {
+  &-text {
     margin-left: $space-3;
   }
 }
