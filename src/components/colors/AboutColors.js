@@ -9,11 +9,11 @@ const aboutColors = [
   },
   {
     id: 2,
-    iconColor: "#004643",
-    iconBackgroundColor: "#abd1c6",
-    headingColor: "#fffffe",
-    textColor: "#abd1c6",
-    sectionColor: "#fff"
+    iconColor: "#ff6e6c",
+    iconBackgroundColor: "#FFFFFF",
+    headingColor: "#1f1235",
+    textColor: "#1b1425",
+    sectionColor: "#FFFFFF"
   },
   {
     id: 3,

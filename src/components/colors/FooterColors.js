@@ -8,9 +8,9 @@ const footerColors = [
   },
   {
     id: 2,
-    headingColor: "#fffffe",
-    textColor: "#abd1c6",
-    iconColor: "#004643",
+    headingColor: "#1f1235",
+    textColor: "#1b1425",
+    iconColor: "#1b1425",
     sectionColor: "#fff"
   },
   {

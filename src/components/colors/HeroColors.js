@@ -10,12 +10,12 @@ const heroColors = [
   },
   {
     id: 2,
-    headingColor: "#fffffe",
-    headingAccentColor: "#5a67d8",
-    textColor: "#abd1c6",
-    buttonColor: "#f9bc60",
-    buttonTextColor: "#001e1d",
-    sectionColor: "#004643"
+    headingColor: "#1f1235",
+    headingAccentColor: "#ff6e6c",
+    textColor: "#1b1425",
+    buttonColor: "#ff6e6c",
+    buttonTextColor: "#1f1235",
+    sectionColor: "#FFFFFF"
   },
   {
     id: 3,

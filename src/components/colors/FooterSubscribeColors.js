@@ -10,12 +10,12 @@ const footerSubscribeColors = [
   },
   {
     id: 2,
-    headingColor: "#fffffe",
-    headingAccentColor: "#5a67d8",
-    textColor: "#abd1c6",
-    buttonColor: "#f9bc60",
-    buttonTextColor: "#001e1d",
-    sectionColor: "#004643"
+    headingColor: "#301e4e",
+    headingAccentColor: "#1f1135",
+    textColor: "#1f1135",
+    buttonColor: "#ff6e6c",
+    buttonTextColor: "#FFFFFF",
+    sectionColor: "#cabae2"
   },
   {
     id: 3,

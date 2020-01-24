@@ -12,14 +12,14 @@ const serviceColors = [
   },
   {
     id: 2,
-    headingColor: "#fffffe",
-    textColor: "#abd1c6",
-    buttonColor: "#f9bc60",
-    buttonTextColor: "#001e1d",
-    sectionColor: "#004643",
-    iconColor: "#5a67d8",
-    iconBackgroundColor: "#ebf4ff",
-    svgsectionColor: "#fff"
+    headingColor: "#1f1135",
+    textColor: "#1b1325",
+    buttonColor: "#ff6e6c",
+    buttonTextColor: "#1f1135",
+    sectionColor: "#f4effc",
+    iconColor: "#ff6e6c",
+    iconBackgroundColor: "#f4effc",
+    svgsectionColor: "#e2daeb"
   },
   {
     id: 3,

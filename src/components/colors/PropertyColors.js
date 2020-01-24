@@ -8,10 +8,10 @@ const propertyColors = [
   },
   {
     id: 2,
-    headingColor: "#fffffe",
-    textColor: "#abd1c6",
-    iconColor: "#7f9cf5",
-    sectionColor: "#004643"
+    headingColor: "#1f1235",
+    textColor: "#1b1425",
+    iconColor: "#ff6e6c",
+    sectionColor: "#FFFFFF"
   },
   {
     id: 3,

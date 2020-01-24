@@ -9,11 +9,11 @@ const testimonialColors = [
   },
   {
     id: 2,
-    textColor: "#abd1c6",
-    textAccentColor: "#fff",
-    iconColor: "#fff",
-    borderColor: "#fff",
-    sectionColor: "#004643"
+    textColor: "#c9bae2",
+    textAccentColor: "#ff6e6c",
+    iconColor: "#ff6e6c",
+    borderColor: "#4c346b",
+    sectionColor: "#301e4e"
   },
   {
     id: 3,
