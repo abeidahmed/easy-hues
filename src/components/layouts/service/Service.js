@@ -2,21 +2,23 @@ import React from "react";
 
 import SectionHues from "../global/SectionHues";
 
-import SVG1 from "./SVG1";
-import SVG2 from "./SVG2";
+import Form from "./Form";
+import Payments from "./Payments";
 
 const Service = props => {
   return (
     <section style={{ backgroundColor: props.colorChange["Section color"] }} className="service">
       <div className="container">
         <div className="service-wrapper">
-          <h2 style={{ color: props.colorChange["Heading color"] }} className="service-title">
-            A better way to send money
-          </h2>
-          <p style={{ color: props.colorChange["Text color"] }} className="service-desc">
-            Quam hendrerit et scelerisque nulla pharetra in. Elementum urna risus enim aliquet
-            pharetra nam tellus. Sem dolor sapien.
-          </p>
+          <div className="service-intro">
+            <h2 style={{ color: props.colorChange["Heading color"] }} className="service-title">
+              A better way to send money
+            </h2>
+            <p style={{ color: props.colorChange["Text color"] }} className="service-desc">
+              Quam hendrerit et scelerisque nulla pharetra in. Elementum urna risus enim aliquet
+              pharetra nam tellus. Sem dolor sapien.
+            </p>
+          </div>
           <div className="service-inner">
             <div className="service-inner-left">
               <h3
@@ -138,7 +140,7 @@ const Service = props => {
                 </div>
               </div>
             </div>
-            <SVG1 colorChange={props.colorChange} />
+            <Form colorChange={props.colorChange} />
           </div>
           <div className="service-inner">
             <div className="service-inner-left order-2">
@@ -226,7 +228,7 @@ const Service = props => {
                 </div>
               </div>
             </div>
-            <SVG2 />
+            <Payments colorChange={props.colorChange} />
           </div>
           <SectionHues huesOpen={props.huesOpen} colorChange={props.colorChange} />
         </div>

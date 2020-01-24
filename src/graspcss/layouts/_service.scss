@@ -69,15 +69,275 @@
   margin-top: $space-8;
 }
 
+//Form
+.service-inner-right {
+  margin-top: $space-12;
+  background-color: $white;
+  border-radius: $rounded-lg;
+  box-shadow: $shadow-lg;
+}
+
+.form-wrapper {
+  padding: $space-5;
+}
+
+.form-intro {
+  display: flex;
+  align-items: center;
+}
+
+.form-info-container {
+  margin-left: $space-4;
+
+  h4 {
+    color: $gray-900;
+    font-weight: $weight-bold;
+  }
+
+  p {
+    font-size: $font-sm;
+    color: $gray-600;
+    margin-top: $space-1;
+  }
+}
+
+.form-content {
+  margin-top: $space-6;
+
+  label {
+    color: $gray-900;
+    font-size: $font-sm;
+    font-weight: $weight-bold;
+  }
+
+  input {
+    display: block;
+    width: 100%;
+    height: $space-12;
+    border: 1px solid $gray-400;
+    border-radius: $rounded-md;
+    margin-top: $space-2;
+    padding-left: $space-2;
+    outline: none;
+
+    &:not(.country-input):focus {
+      border: 1px solid $gray-800;
+    }
+  }
+}
+
+.transaction-control {
+  margin-top: $space-12;
+}
+
+.transaction-details {
+  display: flex;
+
+  .currency-input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .country-input {
+    border-left: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
+.transaction-country {
+  position: relative;
+  width: $space-5-12;
+
+  input {
+    padding-left: $space-10;
+  }
+
+  .country-flag {
+    margin-top: $space-2;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding-left: $space-2;
+  }
+}
+.exchange-rate,
+.recipient-container {
+  margin-top: $space-6;
+}
+
+.form-button-container {
+  margin-top: $space-8;
+  background-color: $gray-100;
+}
+
+.form-button {
+  height: 76px;
+  padding: 0 $space-5;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  a {
+    text-decoration: none;
+    font-size: $font-sm;
+    font-weight: $weight-bold;
+    letter-spacing: $tracking-wide;
+  }
+
+  .button-cancel {
+    color: $gray-600;
+  }
+
+  .button-submit {
+    background-color: $gray-900;
+    color: $white;
+    border-radius: $rounded-md;
+    padding: $space-4 $space-5;
+    margin-left: $space-10;
+    transition: 200ms ease;
+
+    &:hover,
+    &:focus {
+      opacity: 0.9;
+    }
+  }
+}
+
 @include breakpoint(md, up) {
-  .svg-container {
-    width: $space-3-4;
+  .service-inner-right {
+    max-width: 460px;
     margin-left: auto;
     margin-right: auto;
   }
 }
+// End form
+
+// Payment details
+.payment-inner-right {
+  box-shadow: none;
+  background-color: inherit;
+}
+
+.payment-info {
+  box-shadow: $shadow-lg;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 $space-4;
+  border-radius: $rounded-lg;
+  margin-top: $space-3;
+  background-color: $white;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+}
+
+.payment-details {
+  display: flex;
+  align-items: center;
+
+  img {
+    width: $space-10;
+    border-radius: $rounded-full;
+  }
+}
+
+.payment-details-wrapper {
+  margin-left: $space-3;
+
+  h5 {
+    font-size: $font-sm;
+    color: $gray-900;
+  }
+
+  .payment-amount {
+    color: $gray-600;
+    font-size: $font-sm;
+    display: block;
+    margin-top: $space-2;
+  }
+
+  .payment-currency {
+    color: $gray-900;
+    font-weight: $weight-semibold;
+  }
+}
+
+.payment-status {
+  height: $space-6;
+  display: flex;
+  align-items: center;
+
+  padding: 0 $space-3;
+  border-radius: $rounded-full;
+
+  &-dot {
+    display: block;
+    height: 6px;
+    width: 6px;
+    border-radius: $rounded-full;
+  }
+
+  &-type {
+    display: block;
+    line-height: $leading-tight;
+
+    font-size: $font-sm;
+    font-weight: $weight-semibold;
+    margin-left: $space-2;
+  }
+}
+// Success
+.payment-status-success {
+  background-color: $green-100;
+
+  .payment-status-dot {
+    background-color: $green-500;
+  }
+
+  .payment-status-type {
+    color: $green-800;
+  }
+}
+// Processing
+.payment-status-processing {
+  background-color: $orange-100;
+
+  .payment-status-dot {
+    background-color: $orange-500;
+  }
+
+  .payment-status-type {
+    color: $orange-800;
+  }
+}
+// Failed
+.payment-status-failed {
+  background-color: $red-100;
+
+  .payment-status-dot {
+    background-color: $red-500;
+  }
+
+  .payment-status-type {
+    color: $red-800;
+  }
+}
+
+// End payment details
 
 @include breakpoint(lg, up) {
+  .service-intro {
+    max-width: 796px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .service-title {
     font-size: $font-4xl;
   }
@@ -92,6 +352,7 @@
     width: $space-1-2;
     padding-left: $space-3;
     padding-right: $space-3;
+    margin-top: 0;
   }
   .order-1 {
     order: 1;
