@@ -76,7 +76,7 @@ const Service = props => {
                   </div>
                   <div className="service-offer-right">
                     <h4 style={{ color: heading }} className="service-offer-title">
-                      Instance status updates
+                      Instant status updates
                     </h4>
                     <p style={{ color: text }} className="service-offer-desc">
                       Nibh et et gravida elementum eu vivamus montes, ac. Et eget cursus nunc
@@ -169,7 +169,7 @@ const Service = props => {
                   </div>
                   <div className="service-offer-right">
                     <h4 style={{ color: heading }} className="service-offer-title">
-                      Instance status updates
+                      Instant status updates
                     </h4>
                     <p style={{ color: text }} className="service-offer-desc">
                       Nibh et et gravida elementum eu vivamus montes, ac. Et eget cursus nunc
