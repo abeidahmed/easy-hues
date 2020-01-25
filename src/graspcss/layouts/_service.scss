@@ -39,19 +39,11 @@
 
 .service-offer-wrapper {
   display: flex;
-  margin-left: -$space-3;
-  margin-right: -$space-3;
   margin-top: $space-4;
 
   &:first-of-type {
     margin-top: 0;
   }
-}
-
-.service-offer-left,
-.service-offer-right {
-  padding-left: $space-3;
-  padding-right: $space-4;
 }
 
 .service-offer-title {
@@ -72,9 +64,9 @@
 //Form
 .service-inner-right {
   margin-top: $space-12;
-  background-color: $white;
   border-radius: $rounded-lg;
   box-shadow: $shadow-lg;
+  overflow: hidden;
 }
 
 .form-wrapper {
@@ -90,13 +82,11 @@
   margin-left: $space-4;
 
   h4 {
-    color: $gray-900;
     font-weight: $weight-bold;
   }
 
   p {
     font-size: $font-sm;
-    color: $gray-600;
     margin-top: $space-1;
   }
 }
@@ -105,7 +95,6 @@
   margin-top: $space-6;
 
   label {
-    color: $gray-900;
     font-size: $font-sm;
     font-weight: $weight-bold;
   }
@@ -114,15 +103,11 @@
     display: block;
     width: 100%;
     height: $space-12;
-    border: 1px solid $gray-400;
+    border: 1px solid;
     border-radius: $rounded-md;
     margin-top: $space-2;
     padding-left: $space-2;
     outline: none;
-
-    &:not(.country-input):focus {
-      border: 1px solid $gray-800;
-    }
   }
 }
 
@@ -171,7 +156,8 @@
 
 .form-button-container {
   margin-top: $space-8;
-  background-color: $gray-100;
+  background-color: $gray-100; // Need a dynamic color
+  width: 100%;
 }
 
 .form-button {
@@ -188,13 +174,7 @@
     letter-spacing: $tracking-wide;
   }
 
-  .button-cancel {
-    color: $gray-600;
-  }
-
   .button-submit {
-    background-color: $gray-900;
-    color: $white;
     border-radius: $rounded-md;
     padding: $space-4 $space-5;
     margin-left: $space-10;
@@ -231,7 +211,6 @@
   padding: 0 $space-4;
   border-radius: $rounded-lg;
   margin-top: $space-3;
-  background-color: $white;
 
   &:first-of-type {
     margin-top: 0;
@@ -253,18 +232,15 @@
 
   h5 {
     font-size: $font-sm;
-    color: $gray-900;
   }
 
   .payment-amount {
-    color: $gray-600;
     font-size: $font-sm;
     display: block;
     margin-top: $space-2;
   }
 
   .payment-currency {
-    color: $gray-900;
     font-weight: $weight-semibold;
   }
 }
@@ -344,14 +320,10 @@
   .service-inner {
     display: flex;
     align-items: center;
-    margin-left: -$space-3;
-    margin-right: -$space-3;
   }
   .service-inner-left,
   .service-inner-right {
     width: $space-1-2;
-    padding-left: $space-3;
-    padding-right: $space-3;
     margin-top: 0;
   }
   .order-1 {
