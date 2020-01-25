@@ -204,6 +204,7 @@
 .payment-inner-right {
   box-shadow: none;
   background-color: inherit;
+  overflow: visible;
 }
 
 .payment-info {
@@ -324,11 +325,15 @@
   .service-inner {
     display: flex;
     align-items: center;
+    margin-left: -$space-4;
+    margin-right: -$space-4;
   }
   .service-inner-left,
   .service-inner-right {
     width: $space-1-2;
     margin-top: 0;
+    padding-left: $space-4;
+    padding-right: $space-4;
   }
   .order-1 {
     order: 1;
