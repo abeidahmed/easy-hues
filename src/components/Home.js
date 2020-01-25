@@ -248,6 +248,7 @@ class Home extends Component {
           handleSidebar={this.handleSidebar}
           isOpen={this.state.isOpen}
           handleHues={this.handleHues}
+          huesOpen={this.state.huesOpen}
         />
         <Hero huesOpen={this.state.huesOpen} colorChange={this.state.heroSection[0]} />
         <About huesOpen={this.state.huesOpen} colorChange={this.state.aboutSection[0]} />
