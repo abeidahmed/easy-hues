@@ -86,6 +86,7 @@ class Home extends Component {
         "Heading color": "#718096",
         "Text color": "#718096",
         "Icon color": "#a0aec0",
+        "Logo color": "#00d8ff",
         "Section color": "#fff"
       }
     ]
@@ -109,12 +110,12 @@ class Home extends Component {
         this.setState({
           heroSection: [
             {
-              "Heading color": color.headingColor,
-              "Heading accent color": color.headingAccentColor,
-              "Text color": color.textColor,
-              "Button color": color.buttonColor,
-              "Button text color": color.buttonTextColor,
-              "Section color": color.sectionColor
+              "Heading color": color.heading,
+              "Heading accent color": color.headingAccent,
+              "Text color": color.text,
+              "Button color": color.buttonBackground,
+              "Button text color": color.buttonText,
+              "Section color": color.sectionBackground
             }
           ]
         });
@@ -126,11 +127,11 @@ class Home extends Component {
         this.setState({
           aboutSection: [
             {
-              "Icon color": color.iconColor,
-              "Icon background color": color.iconBackgroundColor,
-              "Heading color": color.headingColor,
-              "Text color": color.textColor,
-              "Section color": color.sectionColor
+              "Icon color": color.icon,
+              "Icon background color": color.iconBackground,
+              "Heading color": color.heading,
+              "Text color": color.text,
+              "Section color": color.sectionBackground
             }
           ]
         });
@@ -142,17 +143,17 @@ class Home extends Component {
         this.setState({
           serviceSection: [
             {
-              "Heading color": color.headingColor,
-              "Text color": color.textColor,
-              "Button color": color.buttonColor,
-              "Button text color": color.buttonTextColor,
-              "Section color": color.sectionColor,
-              "Icon color": color.iconColor,
-              "Icon background color": color.iconBackgroundColor,
+              "Heading color": color.heading,
+              "Text color": color.text,
+              "Button color": color.buttonBackground,
+              "Button text color": color.buttonText,
+              "Section color": color.sectionBackground,
+              "Icon color": color.icon,
+              "Icon background color": color.iconBackground,
               "Form label": color.formLabel,
               "Input border": color.inputBorder,
               "Input background": color.inputBackground,
-              "SVG section color": color.svgsectionColor
+              "SVG section color": color.svgSectionBackground
             }
           ]
         });
@@ -164,11 +165,11 @@ class Home extends Component {
         this.setState({
           testimonialSection: [
             {
-              "Text color": color.textColor,
-              "Text accent color": color.textAccentColor,
-              "Icon color": color.iconColor,
+              "Text color": color.text,
+              "Text accent color": color.textAccent,
+              "Icon color": color.icon,
               "Border color": color.borderColor,
-              "Section color": color.sectionColor
+              "Section color": color.sectionBackground
             }
           ]
         });
@@ -180,10 +181,10 @@ class Home extends Component {
         this.setState({
           propertySection: [
             {
-              "Heading color": color.headingColor,
-              "Text color": color.textColor,
-              "Icon color": color.iconColor,
-              "Section color": color.sectionColor
+              "Heading color": color.heading,
+              "Text color": color.text,
+              "Icon color": color.icon,
+              "Section color": color.sectionBackground
             }
           ]
         });
@@ -195,12 +196,12 @@ class Home extends Component {
         this.setState({
           footerSubscribeSection: [
             {
-              "Heading color": color.headingColor,
-              "Heading accent color": color.headingAccentColor,
-              "Text color": color.textColor,
-              "Button color": color.buttonColor,
-              "Button text color": color.buttonTextColor,
-              "Section color": color.sectionColor
+              "Heading color": color.heading,
+              "Heading accent color": color.headingAccent,
+              "Text color": color.text,
+              "Button color": color.buttonBackground,
+              "Button text color": color.buttonText,
+              "Section color": color.sectionBackground
             }
           ]
         });
@@ -212,10 +213,11 @@ class Home extends Component {
         this.setState({
           footerSection: [
             {
-              "Heading color": color.headingColor,
-              "Text color": color.textColor,
-              "Icon color": color.iconColor,
-              "Section color": color.sectionColor
+              "Heading color": color.heading,
+              "Text color": color.text,
+              "Icon color": color.icon,
+              "Logo color": color.logo,
+              "Section color": color.sectionBackground
             }
           ]
         });
@@ -231,11 +233,11 @@ class Home extends Component {
             <h3 className="sidebar-title">Select a color palette</h3>
             {HeroColors.map(color => (
               <button onClick={() => this.handleColorChange(color.id)} key={color.id}>
-                <span style={{ backgroundColor: color.headingColor }}></span>
-                <span style={{ backgroundColor: color.textColor }}></span>
-                <span style={{ backgroundColor: color.buttonColor }}></span>
-                <span style={{ backgroundColor: color.sectionColor }}></span>
-                <span style={{ backgroundColor: color.accentTextColor }}></span>
+                <span style={{ backgroundColor: color.heading }}></span>
+                <span style={{ backgroundColor: color.text }}></span>
+                <span style={{ backgroundColor: color.buttonBackground }}></span>
+                <span style={{ backgroundColor: color.sectionBackground }}></span>
+                <span style={{ backgroundColor: color.headingAccent }}></span>
               </button>
             ))}
           </div>

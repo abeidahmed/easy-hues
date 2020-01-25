@@ -18,10 +18,10 @@ const Form = props => {
     color: props.colorChange["Button text color"],
     backgroundColor: props.colorChange["Button color"]
   };
-  const icon = () => {
+  const iconColor = () => {
     return props.colorChange["Icon color"];
   };
-  const iconBackground = () => {
+  const iconBackgroundColor = () => {
     return props.colorChange["Icon background color"];
   };
 
@@ -32,10 +32,10 @@ const Form = props => {
           <div className="form-intro">
             <div className="form-svg-container">
               <svg width="45" height="60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15 0h30L30 60H0L15 0z" fill={iconBackground()} />
+                <path d="M15 0h30L30 60H0L15 0z" fill={iconBackgroundColor()} />
                 <path
                   d="M31 24a1 1 0 102 0h-2zM12 37a1 1 0 100-2v2zm4-12h20v-2H16v2zm23 3v12h2V28h-2zm-3 15H16v2h20v-2zm-23-3V28h-2v12h2zm3 3a3 3 0 01-3-3h-2a5 5 0 005 5v-2zm23-3a3 3 0 01-3 3v2a5 5 0 005-5h-2zm-3-15a3 3 0 013 3h2a5 5 0 00-5-5v2zm-20-2a5 5 0 00-5 5h2a3 3 0 013-3v-2zm-8-6h20v-2H8v2zM5 32V20H3v12h2zm3 3a3 3 0 01-3-3H3a5 5 0 005 5v-2zm20-18a3 3 0 013 3h2a5 5 0 00-5-5v2zM8 15a5 5 0 00-5 5h2a3 3 0 013-3v-2zm23 5v4h2v-4h-2zM12 35H8v2h4v-2zm17-1a3 3 0 01-3 3v2a5 5 0 005-5h-2zm-3 3a3 3 0 01-3-3h-2a5 5 0 005 5v-2zm-3-3a3 3 0 013-3v-2a5 5 0 00-5 5h2zm3-3a3 3 0 013 3h2a5 5 0 00-5-5v2z"
-                  fill={icon()}
+                  fill={iconColor()}
                 />
               </svg>
             </div>
