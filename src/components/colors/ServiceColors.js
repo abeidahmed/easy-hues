@@ -8,6 +8,9 @@ const serviceColors = [
     sectionColor: "#f7fafc",
     iconColor: "#5a67d8",
     iconBackgroundColor: "#ebf4ff",
+    formLabel: "#1a202c",
+    inputBorder: "#cbd5e0",
+    inputBackground: "#fff",
     svgsectionColor: "#fff"
   },
   {
@@ -19,6 +22,9 @@ const serviceColors = [
     sectionColor: "#f4effc",
     iconColor: "#ff6e6c",
     iconBackgroundColor: "#f4effc",
+    formLabel: "#1a202c",
+    inputBorder: "#cbd5e0",
+    inputBackground: "#fff",
     svgsectionColor: "#e2daeb"
   },
   {
@@ -30,6 +36,9 @@ const serviceColors = [
     sectionColor: "#f9f4ef",
     iconColor: "#5a67d8",
     iconBackgroundColor: "#ebf4ff",
+    formLabel: "#1a202c",
+    inputBorder: "#cbd5e0",
+    inputBackground: "#fff",
     svgsectionColor: "#fff"
   },
   {
@@ -41,6 +50,9 @@ const serviceColors = [
     sectionColor: "#232946",
     iconColor: "#5a67d8",
     iconBackgroundColor: "#ebf4ff",
+    formLabel: "#1a202c",
+    inputBorder: "#cbd5e0",
+    inputBackground: "#fff",
     svgsectionColor: "#fff"
   }
 ];

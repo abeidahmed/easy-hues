@@ -1,41 +1,75 @@
 import React from "react";
 
-const Form = () => {
+const Form = props => {
+  const backgroundColor = {
+    backgroundColor: props.colorChange["SVG section color"]
+  };
+  const inputProp = {
+    backgroundColor: props.colorChange["Input background"],
+    borderColor: props.colorChange["Input border"]
+  };
+  const formLabel = {
+    color: props.colorChange["Form label"]
+  };
+  const textColor = {
+    color: props.colorChange["Text color"]
+  };
+  const buttonStyle = {
+    color: props.colorChange["Button text color"],
+    backgroundColor: props.colorChange["Button color"]
+  };
+  const iconColor = () => {
+    return props.colorChange["Icon color"];
+  };
+  const iconBackground = () => {
+    return props.colorChange["Icon background color"];
+  };
+
   return (
-    <div className="service-inner-right">
+    <div style={backgroundColor} className="service-inner-right">
       <form className="form">
         <div className="form-wrapper">
           <div className="form-intro">
             <div className="form-svg-container">
               <svg width="45" height="60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15 0h30L30 60H0L15 0z" fill="#EBF4FF" />
+                <path d="M15 0h30L30 60H0L15 0z" fill={iconBackground()} />
                 <path
                   d="M31 24a1 1 0 102 0h-2zM12 37a1 1 0 100-2v2zm4-12h20v-2H16v2zm23 3v12h2V28h-2zm-3 15H16v2h20v-2zm-23-3V28h-2v12h2zm3 3a3 3 0 01-3-3h-2a5 5 0 005 5v-2zm23-3a3 3 0 01-3 3v2a5 5 0 005-5h-2zm-3-15a3 3 0 013 3h2a5 5 0 00-5-5v2zm-20-2a5 5 0 00-5 5h2a3 3 0 013-3v-2zm-8-6h20v-2H8v2zM5 32V20H3v12h2zm3 3a3 3 0 01-3-3H3a5 5 0 005 5v-2zm20-18a3 3 0 013 3h2a5 5 0 00-5-5v2zM8 15a5 5 0 00-5 5h2a3 3 0 013-3v-2zm23 5v4h2v-4h-2zM12 35H8v2h4v-2zm17-1a3 3 0 01-3 3v2a5 5 0 005-5h-2zm-3 3a3 3 0 01-3-3h-2a5 5 0 005 5v-2zm-3-3a3 3 0 013-3v-2a5 5 0 00-5 5h2zm3-3a3 3 0 013 3h2a5 5 0 00-5-5v2z"
-                  fill="#5A67D8"
+                  fill={iconColor()}
                 />
               </svg>
             </div>
             <div className="form-info-container">
-              <h4>Send money</h4>
-              <p>Select a recipient and the amount you want to send</p>
+              <h4 style={formLabel}>Send money</h4>
+              <p style={textColor}>Select a recipient and the amount you want to send</p>
             </div>
           </div>
           <div className="form-content">
             <div className="form-control">
-              <label htmlFor="recipient">Recipient</label>
-              <input type="text" id="recipient" placeholder="Jacob Chander" />
+              <label style={formLabel} htmlFor="recipient">
+                Recipient
+              </label>
+              <input style={inputProp} type="text" id="recipient" placeholder="Jacob Chander" />
             </div>
             <div className="transaction-control">
-              <label htmlFor="transaction">How much do you want to send</label>
+              <label style={formLabel} htmlFor="transaction">
+                How much do you want to send
+              </label>
               <div className="transaction-details">
                 <input
+                  style={inputProp}
                   className="currency-input"
                   type="text"
                   id="transaction-id"
                   placeholder="$1000"
                 />
                 <div className="transaction-country">
-                  <input className="country-input" type="text" placeholder="CAD" />
+                  <input
+                    style={inputProp}
+                    className="country-input"
+                    type="text"
+                    placeholder="CAD"
+                  />
                   <div className="country-flag">
                     <svg width="28" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <rect
@@ -73,20 +107,28 @@ const Form = () => {
                 </div>
               </div>
               <div className="exchange-rate">
-                <input type="text" placeholder="$12.17 CAD + Tax" />
-                <input type="text" placeholder="0.7514 per USD" />
+                <input style={inputProp} type="text" placeholder="$12.17 CAD + Tax" />
+                <input style={inputProp} type="text" placeholder="0.7514 per USD" />
               </div>
               <div className="recipient-container">
-                <label htmlFor="recipient-gets">Recipient gets</label>
+                <label style={formLabel} htmlFor="recipient-gets">
+                  Recipient gets
+                </label>
                 <div className="transaction-details">
                   <input
+                    style={inputProp}
                     className="currency-input"
                     type="text"
                     id="transaction"
                     placeholder="$1000"
                   />
                   <div className="transaction-country">
-                    <input className="country-input" type="text" placeholder="CAD" />
+                    <input
+                      style={inputProp}
+                      className="country-input"
+                      type="text"
+                      placeholder="CAD"
+                    />
                     <div className="country-flag">
                       <svg width="28" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="28" height="20" rx="2" fill="#fff" />
@@ -152,10 +194,10 @@ const Form = () => {
         </div>
         <div className="form-button-container">
           <div className="form-button">
-            <a href="#!" className="button-cancel">
+            <a href="#!" style={textColor} className="button-cancel">
               Cancel
             </a>
-            <a href="#!" className="button-submit">
+            <a href="#!" style={buttonStyle} className="button-submit">
               Continue
             </a>
           </div>

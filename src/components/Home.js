@@ -48,6 +48,9 @@ class Home extends Component {
         "Section color": "#f7fafc",
         "Icon color": "#5a67d8",
         "Icon background color": "#ebf4ff",
+        "Form label": "#1a202c",
+        "Input border": "#cbd5e0",
+        "Input background": "#fff",
         "SVG section color": "#fff"
       }
     ],
@@ -146,6 +149,9 @@ class Home extends Component {
               "Section color": color.sectionColor,
               "Icon color": color.iconColor,
               "Icon background color": color.iconBackgroundColor,
+              "Form label": color.formLabel,
+              "Input border": color.inputBorder,
+              "Input background": color.inputBackground,
               "SVG section color": color.svgsectionColor
             }
           ]
