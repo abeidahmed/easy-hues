@@ -10,10 +10,20 @@ const huesOpen = props => {
     return splitArray[0][0].toUpperCase() + toArray.slice(1);
   };
 
+  // Check if inherited colors has it's own property.
+  // Return heading color if found else return text color.
+  const propCheck = (property, check) => {
+    if (property.hasOwnProperty(check)) {
+      return heading;
+    } else {
+      return text;
+    }
+  };
+
   if (props.huesOpen) {
     return (
       <div className="section-hues">
-        <h3 style={{ color: heading }} className="section-hues-title">
+        <h3 style={{ color: propCheck(props.colorChange, heading) }} className="section-hues-title">
           This section's hues
         </h3>
         <p style={{ color: text }} className="section-hues-subtitle">
