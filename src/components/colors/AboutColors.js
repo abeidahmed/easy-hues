@@ -17,19 +17,19 @@ const aboutColors = [
   },
   {
     id: 3,
-    heading: "#716040",
-    text: "#f9f4ef",
-    icon: "#020826",
-    iconBackground: "#5a67d8",
+    heading: "0e0000",
+    text: "#3E3333",
+    icon: "#FD1015",
+    iconBackground: "#FCF5E8",
     sectionBackground: "#fff"
   },
   {
     id: 4,
-    heading: "#b8c1ec",
-    text: "#232946",
-    icon: "#fffffe",
-    iconBackground: "#5a67d8",
-    sectionBackground: "#fff"
+    heading: "#0F3166",
+    text: "#4c5656",
+    icon: "#3C6CB7",
+    iconBackground: "#E8F1FF",
+    sectionBackground: "#F9FAFC"
   }
 ];
 

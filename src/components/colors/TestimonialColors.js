@@ -17,19 +17,19 @@ const testimonialColors = [
   },
   {
     id: 3,
-    text: "#716040",
-    textAccent: "#fff",
-    icon: "#fff",
-    borderColor: "#fff",
-    sectionBackground: "#f9f4ef"
+    text: "#cbd5e0",
+    textAccent: "#e2e8f0",
+    icon: "#cbd5e0",
+    borderColor: "#2d3748",
+    sectionBackground: "#0E0000"
   },
   {
     id: 4,
     text: "#b8c1ec",
     textAccent: "#fff",
     icon: "#fff",
-    borderColor: "#fff",
-    sectionBackground: "#232946"
+    borderColor: "#0B2A5C",
+    sectionBackground: "#0B2A5C"
   }
 ];
 

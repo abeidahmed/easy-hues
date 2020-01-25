@@ -19,21 +19,21 @@ const footerSubscribeColors = [
   },
   {
     id: 3,
-    heading: "#020826",
-    headingAccent: "#5a67d8",
-    text: "#716040",
-    buttonBackground: "#8c7851",
-    buttonText: "#fffffe",
-    sectionBackground: "#f9f4ef"
+    heading: "#0e0000",
+    headingAccent: "#718096",
+    text: "#718096",
+    buttonBackground: "#FD1015",
+    buttonText: "#fff",
+    sectionBackground: "#FCF5E8"
   },
   {
     id: 4,
-    heading: "#fffffe",
-    headingAccent: "#5a67d8",
-    text: "#b8c1ec",
-    buttonBackground: "#eebbc3",
-    buttonText: "#232946",
-    sectionBackground: "#232946"
+    heading: "#0F3166",
+    headingAccent: "#4c5656",
+    text: "#4c5656",
+    buttonBackground: "#33DB95",
+    buttonText: "#fff",
+    sectionBackground: "#F9FAFC"
   }
 ];
 

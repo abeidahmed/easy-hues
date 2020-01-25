@@ -15,17 +15,17 @@ const propertyColors = [
   },
   {
     id: 3,
-    heading: "#020826",
-    text: "#716040",
-    icon: "#7f9cf5",
-    sectionBackground: "#f9f4ef"
+    heading: "#0e0000",
+    text: "#4b4b4b",
+    icon: "#FD1015",
+    sectionBackground: "#fff"
   },
   {
     id: 4,
-    heading: "#fffffe",
-    text: "#b8c1ec",
-    icon: "#7f9cf5",
-    sectionBackground: "#232946"
+    heading: "#0F3166",
+    text: "#4c5656",
+    icon: "#33DB95",
+    sectionBackground: "#F9FAFC"
   }
 ];
 

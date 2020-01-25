@@ -17,19 +17,19 @@ const footerColors = [
   },
   {
     id: 3,
-    text: "#f9f4ef",
-    heading: "#716040",
-    icon: "#020826",
-    logo: "#5a67d8",
-    sectionBackground: "#fff"
+    text: "#cbd5e0",
+    heading: "#fff",
+    icon: "#cbd5e0",
+    logo: "#FD1015",
+    sectionBackground: "#0E0000"
   },
   {
     id: 4,
-    heading: "#b8c1ec",
-    text: "#232946",
-    icon: "#fffffe",
-    logo: "#5a67d8",
-    sectionBackground: "#fff"
+    heading: "#fff",
+    text: "#858F9F",
+    icon: "#858F9F",
+    logo: "#33DB95",
+    sectionBackground: "#061B3C"
   }
 ];
 
