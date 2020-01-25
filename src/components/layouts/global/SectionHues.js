@@ -12,8 +12,8 @@ const huesOpen = props => {
 
   // Check if inherited colors has it's own property.
   // Return heading color if found else return text color.
-  const propCheck = (property, check) => {
-    if (property.hasOwnProperty(check)) {
+  const propCheck = (property, element) => {
+    if (property.hasOwnProperty(element)) {
       return heading;
     } else {
       return text;
