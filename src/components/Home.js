@@ -22,72 +22,72 @@ class Home extends Component {
     huesOpen: false,
     heroSection: [
       {
-        "Heading color": "#1a202c",
-        "Heading accent color": "#5a67d8",
-        "Text color": "#718096",
-        "Button color": "#2d3748",
-        "Button text color": "#fff",
-        "Section color": "#fff"
+        heading: "#1a202c",
+        headingAccent: "#5a67d8",
+        text: "#718096",
+        buttonBackground: "#2d3748",
+        buttonText: "#fff",
+        background: "#fff"
       }
     ],
     aboutSection: [
       {
-        "Heading color": "#1a202c",
-        "Text color": "#718096",
-        "Icon color": "#5a67d8",
-        "Icon background color": "#ebf4ff",
-        "Section color": "#fff"
+        heading: "#1a202c",
+        text: "#718096",
+        icon: "#5a67d8",
+        iconBackground: "#ebf4ff",
+        background: "#fff"
       }
     ],
     serviceSection: [
       {
-        "Heading color": "#1a202c",
-        "Text color": "#718096",
-        "Button color": "#1a202c",
-        "Button text color": "#fff",
-        "Section color": "#f7fafc",
-        "Icon color": "#5a67d8",
-        "Icon background color": "#ebf4ff",
-        "Form label": "#1a202c",
-        "Input border": "#cbd5e0",
-        "Input background": "#fff",
-        "SVG section color": "#fff"
+        heading: "#1a202c",
+        text: "#718096",
+        buttonBackground: "#1a202c",
+        buttonText: "#fff",
+        background: "#f7fafc",
+        icon: "#5a67d8",
+        iconBackground: "#ebf4ff",
+        formLabel: "#1a202c",
+        inputBorder: "#cbd5e0",
+        inputBackground: "#fff",
+        formBackground: "#fff"
       }
     ],
     testimonialSection: [
       {
-        "Text color": "#fff",
-        "Text accent color": "#c3dafe",
-        "Icon color": "#c3dafe",
-        "Border color": "#3c366b",
-        "Section color": "#434190"
+        text: "#fff",
+        textAccent: "#c3dafe",
+        icon: "#c3dafe",
+        border: "#3c366b",
+        background: "#434190"
       }
     ],
     propertySection: [
       {
-        "Heading color": "#fff",
-        "Text color": "#cbd5e0",
-        "Icon color": "#7f9cf5",
-        "Section color": "#2d3748"
+        heading: "#fff",
+        text: "#cbd5e0",
+        icon: "#7f9cf5",
+        background: "#2d3748"
       }
     ],
     footerSubscribeSection: [
       {
-        "Heading color": "#3c366b",
-        "Heading accent color": "#4c51bf",
-        "Text color": "#5a67d8",
-        "Button color": "#2d3748",
-        "Button text color": "#fff",
-        "Section color": "#ebf4ff"
+        heading: "#3c366b",
+        headingAccent: "#4c51bf",
+        text: "#5a67d8",
+        buttonBackground: "#2d3748",
+        buttonText: "#fff",
+        background: "#ebf4ff"
       }
     ],
     footerSection: [
       {
-        "Heading color": "#718096",
-        "Text color": "#718096",
-        "Icon color": "#a0aec0",
-        "Logo color": "#00d8ff",
-        "Section color": "#fff"
+        heading: "#718096",
+        text: "#718096",
+        icon: "#a0aec0",
+        logo: "#00d8ff",
+        background: "#fff"
       }
     ]
   };
@@ -110,12 +110,12 @@ class Home extends Component {
         this.setState({
           heroSection: [
             {
-              "Heading color": color.heading,
-              "Heading accent color": color.headingAccent,
-              "Text color": color.text,
-              "Button color": color.buttonBackground,
-              "Button text color": color.buttonText,
-              "Section color": color.sectionBackground
+              heading: color.heading,
+              headingAccent: color.headingAccent,
+              text: color.text,
+              buttonBackground: color.buttonBackground,
+              buttonText: color.buttonText,
+              background: color.sectionBackground
             }
           ]
         });
@@ -127,11 +127,11 @@ class Home extends Component {
         this.setState({
           aboutSection: [
             {
-              "Icon color": color.icon,
-              "Icon background color": color.iconBackground,
-              "Heading color": color.heading,
-              "Text color": color.text,
-              "Section color": color.sectionBackground
+              heading: color.heading,
+              text: color.text,
+              icon: color.icon,
+              iconBackground: color.iconBackground,
+              background: color.sectionBackground
             }
           ]
         });
@@ -143,17 +143,17 @@ class Home extends Component {
         this.setState({
           serviceSection: [
             {
-              "Heading color": color.heading,
-              "Text color": color.text,
-              "Button color": color.buttonBackground,
-              "Button text color": color.buttonText,
-              "Section color": color.sectionBackground,
-              "Icon color": color.icon,
-              "Icon background color": color.iconBackground,
-              "Form label": color.formLabel,
-              "Input border": color.inputBorder,
-              "Input background": color.inputBackground,
-              "SVG section color": color.svgSectionBackground
+              heading: color.heading,
+              text: color.text,
+              buttonBackground: color.buttonBackground,
+              buttonText: color.buttonText,
+              background: color.sectionBackground,
+              icon: color.icon,
+              iconBackground: color.iconBackground,
+              formLabel: color.formLabel,
+              inputBorder: color.inputBorder,
+              inputBackground: color.inputBackground,
+              formBackground: color.svgSectionBackground
             }
           ]
         });
@@ -165,11 +165,11 @@ class Home extends Component {
         this.setState({
           testimonialSection: [
             {
-              "Text color": color.text,
-              "Text accent color": color.textAccent,
-              "Icon color": color.icon,
-              "Border color": color.borderColor,
-              "Section color": color.sectionBackground
+              text: color.text,
+              textAccent: color.textAccent,
+              icon: color.icon,
+              border: color.borderColor,
+              background: color.sectionBackground
             }
           ]
         });
@@ -181,10 +181,10 @@ class Home extends Component {
         this.setState({
           propertySection: [
             {
-              "Heading color": color.heading,
-              "Text color": color.text,
-              "Icon color": color.icon,
-              "Section color": color.sectionBackground
+              heading: color.heading,
+              text: color.text,
+              icon: color.icon,
+              background: color.sectionBackground
             }
           ]
         });
@@ -196,12 +196,12 @@ class Home extends Component {
         this.setState({
           footerSubscribeSection: [
             {
-              "Heading color": color.heading,
-              "Heading accent color": color.headingAccent,
-              "Text color": color.text,
-              "Button color": color.buttonBackground,
-              "Button text color": color.buttonText,
-              "Section color": color.sectionBackground
+              heading: color.heading,
+              headingAccent: color.headingAccent,
+              text: color.text,
+              buttonBackground: color.buttonBackground,
+              buttonText: color.buttonText,
+              background: color.sectionBackground
             }
           ]
         });
@@ -213,11 +213,11 @@ class Home extends Component {
         this.setState({
           footerSection: [
             {
-              "Heading color": color.heading,
-              "Text color": color.text,
-              "Icon color": color.icon,
-              "Logo color": color.logo,
-              "Section color": color.sectionBackground
+              heading: color.heading,
+              text: color.text,
+              icon: color.icon,
+              logo: color.logo,
+              background: color.sectionBackground
             }
           ]
         });

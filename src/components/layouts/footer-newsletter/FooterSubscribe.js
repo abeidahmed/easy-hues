@@ -3,32 +3,29 @@ import React from "react";
 import SectionHues from "../global/SectionHues";
 
 const FooterSubscribe = props => {
-  const backgroundColor = {
-    backgroundColor: props.colorChange["Section color"]
-  };
-  const headingColor = {
-    color: props.colorChange["Heading color"]
-  };
-  const headingAccentColor = {
-    color: props.colorChange["Heading accent color"]
-  };
-  const textColor = {
-    color: props.colorChange["Text color"]
-  };
+  const {
+    background,
+    heading,
+    headingAccent,
+    text,
+    buttonBackground,
+    buttonText
+  } = props.colorChange;
+
   const buttonStyle = {
-    color: props.colorChange["Button text color"],
-    backgroundColor: props.colorChange["Button color"]
+    color: buttonText,
+    backgroundColor: buttonBackground
   };
   return (
     <section className="sub">
       <div className="container">
-        <div style={backgroundColor} className="sub-container">
+        <div style={{ backgroundColor: background }} className="sub-container">
           <div className="sub-wrapper">
             <div className="sub-header">
-              <h3 style={headingColor} className="sub-title">
+              <h3 style={{ color: heading }} className="sub-title">
                 Want early access and product updates?
               </h3>
-              <p style={headingAccentColor} className="sub-desc">
+              <p style={{ color: headingAccent }} className="sub-desc">
                 Sign up to get notified when it's ready.
               </p>
             </div>
@@ -41,9 +38,9 @@ const FooterSubscribe = props => {
                   </button>
                 </div>
               </div>
-              <p style={textColor} className="sub-policy">
+              <p style={{ color: text }} className="sub-policy">
                 We care about the protection of your data. Read our{" "}
-                <a style={headingColor} href="#!">
+                <a style={{ color: heading }} href="#!">
                   Privacy Policy
                 </a>
                 .

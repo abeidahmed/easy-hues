@@ -1,58 +1,57 @@
 import React from "react";
 
 const Form = props => {
-  const backgroundColor = {
-    backgroundColor: props.colorChange["SVG section color"]
-  };
+  console.log(props.colorChange);
+  const {
+    formBackground,
+    text,
+    buttonBackground,
+    buttonText,
+    formLabel,
+    icon,
+    iconBackground,
+    inputBackground,
+    inputBorder
+  } = props.colorChange;
+
   const inputProp = {
-    backgroundColor: props.colorChange["Input background"],
-    borderColor: props.colorChange["Input border"]
+    backgroundColor: inputBackground,
+    borderColor: inputBorder
   };
-  const formLabel = {
-    color: props.colorChange["Form label"]
-  };
-  const text = {
-    color: props.colorChange["Text color"]
-  };
+
   const buttonStyle = {
-    color: props.colorChange["Button text color"],
-    backgroundColor: props.colorChange["Button color"]
-  };
-  const iconColor = () => {
-    return props.colorChange["Icon color"];
-  };
-  const iconBackgroundColor = () => {
-    return props.colorChange["Icon background color"];
+    color: buttonText,
+    backgroundColor: buttonBackground
   };
 
   return (
-    <div style={backgroundColor} className="service-inner-right">
+    <div style={{ backgroundColor: formBackground }} className="service-inner-right">
       <form className="form">
         <div className="form-wrapper">
           <div className="form-intro">
             <div className="form-svg-container">
               <svg width="45" height="60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15 0h30L30 60H0L15 0z" fill={iconBackgroundColor()} />
+                <path d="M15 0h30L30 60H0L15 0z" fill={iconBackground} />
                 <path
                   d="M31 24a1 1 0 102 0h-2zM12 37a1 1 0 100-2v2zm4-12h20v-2H16v2zm23 3v12h2V28h-2zm-3 15H16v2h20v-2zm-23-3V28h-2v12h2zm3 3a3 3 0 01-3-3h-2a5 5 0 005 5v-2zm23-3a3 3 0 01-3 3v2a5 5 0 005-5h-2zm-3-15a3 3 0 013 3h2a5 5 0 00-5-5v2zm-20-2a5 5 0 00-5 5h2a3 3 0 013-3v-2zm-8-6h20v-2H8v2zM5 32V20H3v12h2zm3 3a3 3 0 01-3-3H3a5 5 0 005 5v-2zm20-18a3 3 0 013 3h2a5 5 0 00-5-5v2zM8 15a5 5 0 00-5 5h2a3 3 0 013-3v-2zm23 5v4h2v-4h-2zM12 35H8v2h4v-2zm17-1a3 3 0 01-3 3v2a5 5 0 005-5h-2zm-3 3a3 3 0 01-3-3h-2a5 5 0 005 5v-2zm-3-3a3 3 0 013-3v-2a5 5 0 00-5 5h2zm3-3a3 3 0 013 3h2a5 5 0 00-5-5v2z"
-                  fill={iconColor()}
+                  fill={icon}
                 />
               </svg>
             </div>
             <div className="form-info-container">
-              <h4 style={formLabel}>Send money</h4>
-              <p style={text}>Select a recipient and the amount you want to send</p>
+              <h4 style={{ color: formLabel }}>Send money</h4>
+              <p style={{ color: text }}>Select a recipient and the amount you want to send</p>
             </div>
           </div>
           <div className="form-content">
             <div className="form-control">
-              <label style={formLabel} htmlFor="recipient">
+              <label style={{ color: formLabel }} htmlFor="recipient">
                 Recipient
               </label>
               <input style={inputProp} type="text" id="recipient" placeholder="Jacob Chander" />
             </div>
             <div className="transaction-control">
-              <label style={formLabel} htmlFor="transaction">
+              <label style={{ color: formLabel }} htmlFor="transaction">
                 How much do you want to send
               </label>
               <div className="transaction-details">
@@ -111,7 +110,7 @@ const Form = props => {
                 <input style={inputProp} type="text" placeholder="0.7514 per USD" />
               </div>
               <div className="recipient-container">
-                <label style={formLabel} htmlFor="recipient-gets">
+                <label style={{ color: formLabel }} htmlFor="recipient-gets">
                   Recipient gets
                 </label>
                 <div className="transaction-details">
@@ -194,7 +193,7 @@ const Form = props => {
         </div>
         <div className="form-button-container">
           <div className="form-button">
-            <a href="#!" style={text} className="button-cancel">
+            <a href="#!" style={{ color: text }} className="button-cancel">
               Cancel
             </a>
             <a href="#!" style={buttonStyle} className="button-submit">

@@ -3,44 +3,39 @@ import React from "react";
 import SectionHues from "../global/SectionHues";
 
 const Hero = props => {
-  const backgroundColor = {
-    backgroundColor: props.colorChange["Section color"]
-  };
-  const headingColor = {
-    color: props.colorChange["Heading color"]
-  };
-  const headingAccentColor = {
-    color: props.colorChange["Heading accent color"]
-  };
-  const textColor = {
-    color: props.colorChange["Text color"]
-  };
+  const {
+    background,
+    heading,
+    headingAccent,
+    text,
+    buttonBackground,
+    buttonText
+  } = props.colorChange;
+
   const buttonStyle = {
-    color: props.colorChange["Button text color"],
-    backgroundColor: props.colorChange["Button color"]
+    color: buttonText,
+    backgroundColor: buttonBackground
   };
-  const playColor = () => {
-    return props.colorChange["Heading accent color"];
-  };
+
   return (
-    <section style={backgroundColor} className="hero-container">
+    <section style={{ backgroundColor: background }} className="hero-container">
       <div className="container">
         <div className="hero-wrapper">
           <div className="hero-container-inner">
             <div className="hero-left">
-              <h3 style={textColor} className="hero-subtitle">
+              <h3 style={{ color: text }} className="hero-subtitle">
                 Coming soon
               </h3>
-              <h1 style={headingColor} className="hero-title">
-                Data to enrich your <span style={headingAccentColor}>online business</span>
+              <h1 style={{ color: heading }} className="hero-title">
+                Data to enrich your <span style={{ color: headingAccent }}>online business</span>
               </h1>
-              <p style={textColor} className="hero-desc">
+              <p style={{ color: text }} className="hero-desc">
                 Nulla viverra urna facilisis amet, vitae sapien. Velit feugiat tortor nisl eu
                 faucibus dolor mauris. Malesuada tincidunt rutrum turpis vitae sed euismod urna
                 etiam mi. Vitae, rutrum quis enim integer.
               </p>
               <div className="subscribe-field">
-                <h3 style={headingColor} className="subscribe-field-intro">
+                <h3 style={{ color: heading }} className="subscribe-field-intro">
                   Sign up to get notified when it's ready.
                 </h3>
                 <div className="subscribe-field-inner">
@@ -51,9 +46,9 @@ const Hero = props => {
                     </button>
                   </div>
                 </div>
-                <p style={textColor} className="subscribe-policy">
+                <p style={{ color: text }} className="subscribe-policy">
                   We care about the protection of your data. Read our{" "}
-                  <a style={headingColor} href="#!">
+                  <a style={{ color: heading }} href="#!">
                     Privacy Policy
                   </a>
                   .
@@ -75,7 +70,7 @@ const Hero = props => {
                     fillRule="evenodd"
                     clipRule="evenodd"
                     d="M48.288 34.313a2.5 2.5 0 012.537.067l20 12.5a2.5 2.5 0 010 4.24l-20 12.5A2.5 2.5 0 0147 61.5v-25a2.5 2.5 0 011.288-2.187z"
-                    fill={playColor()}
+                    fill={headingAccent}
                   />
                   <defs>
                     <filter
