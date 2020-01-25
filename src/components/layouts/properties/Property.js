@@ -9,13 +9,15 @@ const Property = props => {
     <section style={{ backgroundColor: background }} className="property">
       <div className="container">
         <div className="property-wrapper">
-          <h3 style={{ color: heading }} className="property-intro">
-            A better way to send money
-          </h3>
-          <p style={{ color: text }} className="property-intro-info">
-            Laoreet neque cras hendrerit nullam tempor sagittis, adipiscing sem. Purus vitae risus,
-            fames pellentesque ut nulla imperdiet eget vestibulum.
-          </p>
+          <div className="property-intro">
+            <h3 style={{ color: heading }} className="property-intro">
+              A better way to send money
+            </h3>
+            <p style={{ color: text }} className="property-intro-info">
+              Laoreet neque cras hendrerit nullam tempor sagittis, adipiscing sem. Purus vitae
+              risus, fames pellentesque ut nulla imperdiet eget vestibulum.
+            </p>
+          </div>
           <div className="property-flexed-container">
             <div className="property-container">
               <h4 style={{ color: heading }} className="property-title">
