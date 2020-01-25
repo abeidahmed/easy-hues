@@ -34,6 +34,15 @@ const heroColors = [
     buttonBackground: "#33DB95",
     buttonText: "#fff",
     sectionBackground: "#F9FAFC"
+  },
+  {
+    id: 5,
+    heading: "#004A43",
+    headingAccent: "#004A43",
+    text: "#345E5A",
+    buttonBackground: "#FFAD3D",
+    buttonText: "#004a43",
+    sectionBackground: "#F1F6F6"
   }
 ];
 

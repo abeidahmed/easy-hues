@@ -26,6 +26,13 @@ const propertyColors = [
     text: "#4c5656",
     icon: "#33DB95",
     sectionBackground: "#F9FAFC"
+  },
+  {
+    id: 5,
+    heading: "#004A43",
+    text: "#345E5A",
+    icon: "#FFAD3D",
+    sectionBackground: "#fff"
   }
 ];
 

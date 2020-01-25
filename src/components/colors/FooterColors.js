@@ -30,6 +30,14 @@ const footerColors = [
     icon: "#858F9F",
     logo: "#33DB95",
     sectionBackground: "#061B3C"
+  },
+  {
+    id: 5,
+    heading: "#fff",
+    text: "#58d1bd",
+    icon: "#58d1bd",
+    logo: "#FFAD3D",
+    sectionBackground: "#004A43"
   }
 ];
 

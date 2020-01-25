@@ -30,6 +30,14 @@ const testimonialColors = [
     icon: "#fff",
     borderColor: "#0B2A5C",
     sectionBackground: "#0B2A5C"
+  },
+  {
+    id: 5,
+    text: "#F1F6F6",
+    textAccent: "#58d1bd",
+    icon: "#58d1bd",
+    borderColor: "#00585B",
+    sectionBackground: "#004A43"
   }
 ];
 

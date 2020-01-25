@@ -54,6 +54,20 @@ const serviceColors = [
     inputBorder: "#cbd5e0",
     inputBackground: "#fff",
     formBackground: "#fff"
+  },
+  {
+    id: 5,
+    heading: "#004A43",
+    text: "#345E5A",
+    buttonBackground: "#FFAD3D",
+    buttonText: "#004a43",
+    sectionBackground: "#F1F6F6",
+    icon: "#FFAD3D",
+    iconBackground: "#DEF6F2",
+    formLabel: "#1a202c",
+    inputBorder: "#cbd5e0",
+    inputBackground: "#fff",
+    formBackground: "#fff"
   }
 ];
 

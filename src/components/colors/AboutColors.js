@@ -30,6 +30,14 @@ const aboutColors = [
     icon: "#3C6CB7",
     iconBackground: "#E8F1FF",
     sectionBackground: "#F9FAFC"
+  },
+  {
+    id: 5,
+    heading: "#004A43",
+    text: "#345E5A",
+    icon: "#FFAD3D",
+    iconBackground: "#F1F6F6",
+    sectionBackground: "#fff"
   }
 ];
 
