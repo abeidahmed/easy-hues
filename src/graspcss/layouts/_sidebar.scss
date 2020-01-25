@@ -1,6 +1,6 @@
 .sidebar-container {
   max-width: 200px;
-  margin-top: $space-16;
+  margin-top: $space-12;
   left: 0;
   height: 100%;
   position: fixed;
@@ -8,7 +8,10 @@
   box-shadow: $shadow-xl;
   transform: translateX(-200%);
   transition: 200ms ease-in-out;
+  overflow: hidden;
+  overflow-y: auto;
   z-index: z(sidebar);
+
   &.active {
     transform: translateX(0);
   }
@@ -16,8 +19,7 @@
   &-inner {
     width: 100%;
     margin-top: $space-6;
-    padding: 0 $space-6;
-    overflow-y: auto;
+    padding: $space-4 $space-6;
   }
 
   .sidebar-title {
@@ -38,7 +40,8 @@
     outline: none;
     transition: 100ms ease;
 
-    &:hover {
+    &:hover,
+    &.active {
       background-color: $gray-200;
     }
 

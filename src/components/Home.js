@@ -20,6 +20,7 @@ class Home extends Component {
   state = {
     isOpen: false,
     huesOpen: false,
+    activeId: 1,
     heroSection: [
       {
         heading: "#1a202c",
@@ -102,6 +103,12 @@ class Home extends Component {
     this.setState(prevState => ({
       huesOpen: !prevState.huesOpen
     }));
+  };
+
+  handleActive = id => {
+    this.setState({
+      activeId: id
+    });
   };
 
   handleColorChange = id => {
@@ -232,7 +239,14 @@ class Home extends Component {
           <div className="sidebar-container-inner">
             <h3 className="sidebar-title">Select a color palette</h3>
             {HeroColors.map(color => (
-              <button onClick={() => this.handleColorChange(color.id)} key={color.id}>
+              <button
+                className={this.state.activeId === color.id ? "active" : null}
+                onClick={() => {
+                  this.handleColorChange(color.id);
+                  this.handleActive(color.id);
+                }}
+                key={color.id}
+              >
                 <span style={{ backgroundColor: color.heading }}></span>
                 <span style={{ backgroundColor: color.text }}></span>
                 <span style={{ backgroundColor: color.buttonBackground }}></span>
