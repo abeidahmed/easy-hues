@@ -14,11 +14,11 @@ const Sidebar = props => {
             }}
             key={color.id}
           >
-            <span style={{ backgroundColor: color.heading }}></span>
-            <span style={{ backgroundColor: color.text }}></span>
-            <span style={{ backgroundColor: color.buttonBackground }}></span>
-            <span style={{ backgroundColor: color.sectionBackground }}></span>
             <span style={{ backgroundColor: color.headingAccent }}></span>
+            <span style={{ backgroundColor: color.buttonBackground }}></span>
+            <span style={{ backgroundColor: color.text }}></span>
+            <span style={{ backgroundColor: color.sectionBackground }}></span>
+            <span style={{ backgroundColor: color.heading }}></span>
           </button>
         ))}
       </div>
