@@ -11,7 +11,7 @@ const serviceColors = [
     formLabel: "#1a202c",
     inputBorder: "#cbd5e0",
     inputBackground: "#fff",
-    svgSectionBackground: "#fff"
+    formBackground: "#fff"
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ const serviceColors = [
     formLabel: "#1a202c",
     inputBorder: "#cbd5e0",
     inputBackground: "#fff",
-    svgSectionBackground: "#e2daeb"
+    formBackground: "#e2daeb"
   },
   {
     id: 3,
@@ -39,7 +39,7 @@ const serviceColors = [
     formLabel: "#1a202c",
     inputBorder: "#cbd5e0",
     inputBackground: "#fff",
-    svgSectionBackground: "#fff"
+    formBackground: "#fff"
   },
   {
     id: 4,
@@ -53,7 +53,7 @@ const serviceColors = [
     formLabel: "#1a202c",
     inputBorder: "#cbd5e0",
     inputBackground: "#fff",
-    svgSectionBackground: "#fff"
+    formBackground: "#fff"
   }
 ];
 

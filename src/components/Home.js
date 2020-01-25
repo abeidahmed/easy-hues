@@ -153,7 +153,7 @@ class Home extends Component {
               formLabel: color.formLabel,
               inputBorder: color.inputBorder,
               inputBackground: color.inputBackground,
-              formBackground: color.svgSectionBackground
+              formBackground: color.formBackground
             }
           ]
         });
