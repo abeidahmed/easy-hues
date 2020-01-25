@@ -1,31 +1,31 @@
 const footerColors = [
   {
     id: 1,
-    headingColor: "#718096",
-    textColor: "#718096",
-    iconColor: "#a0aec0",
-    sectionColor: "#fff"
+    heading: "#718096",
+    text: "#718096",
+    icon: "#a0aec0",
+    sectionBackground: "#fff"
   },
   {
     id: 2,
-    headingColor: "#1f1235",
-    textColor: "#1b1425",
-    iconColor: "#1b1425",
-    sectionColor: "#fff"
+    heading: "#1f1235",
+    text: "#1b1425",
+    icon: "#1b1425",
+    sectionBackground: "#fff"
   },
   {
     id: 3,
-    textColor: "#f9f4ef",
-    headingColor: "#716040",
-    iconColor: "#020826",
-    sectionColor: "#fff"
+    text: "#f9f4ef",
+    heading: "#716040",
+    icon: "#020826",
+    sectionBackground: "#fff"
   },
   {
     id: 4,
-    headingColor: "#b8c1ec",
-    textColor: "#232946",
-    iconColor: "#fffffe",
-    sectionColor: "#fff"
+    heading: "#b8c1ec",
+    text: "#232946",
+    icon: "#fffffe",
+    sectionBackground: "#fff"
   }
 ];
 

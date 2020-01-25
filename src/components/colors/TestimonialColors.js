@@ -1,35 +1,35 @@
 const testimonialColors = [
   {
     id: 1,
-    textColor: "#fff",
-    textAccentColor: "#c3dafe",
-    iconColor: "#c3dafe",
+    text: "#fff",
+    textAccent: "#c3dafe",
+    icon: "#c3dafe",
     borderColor: "#3c366b",
-    sectionColor: "#434190"
+    sectionBackground: "#434190"
   },
   {
     id: 2,
-    textColor: "#c9bae2",
-    textAccentColor: "#ff6e6c",
-    iconColor: "#ff6e6c",
+    text: "#c9bae2",
+    textAccent: "#ff6e6c",
+    icon: "#ff6e6c",
     borderColor: "#4c346b",
-    sectionColor: "#301e4e"
+    sectionBackground: "#301e4e"
   },
   {
     id: 3,
-    textColor: "#716040",
-    textAccentColor: "#fff",
-    iconColor: "#fff",
+    text: "#716040",
+    textAccent: "#fff",
+    icon: "#fff",
     borderColor: "#fff",
-    sectionColor: "#f9f4ef"
+    sectionBackground: "#f9f4ef"
   },
   {
     id: 4,
-    textColor: "#b8c1ec",
-    textAccentColor: "#fff",
-    iconColor: "#fff",
+    text: "#b8c1ec",
+    textAccent: "#fff",
+    icon: "#fff",
     borderColor: "#fff",
-    sectionColor: "#232946"
+    sectionBackground: "#232946"
   }
 ];
 

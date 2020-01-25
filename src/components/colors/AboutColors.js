@@ -1,35 +1,35 @@
 const aboutColors = [
   {
     id: 1,
-    headingColor: "#1a202c",
-    textColor: "#718096",
-    iconColor: "#5a67d8",
-    iconBackgroundColor: "#ebf4ff",
-    sectionColor: "#fff"
+    heading: "#1a202c",
+    text: "#718096",
+    icon: "#5a67d8",
+    iconBackground: "#ebf4ff",
+    sectionBackground: "#fff"
   },
   {
     id: 2,
-    headingColor: "#1f1235",
-    textColor: "#1b1425",
-    iconColor: "#ff6e6c",
-    iconBackgroundColor: "#FFFFFF",
-    sectionColor: "#FFFFFF"
+    heading: "#1f1235",
+    text: "#1b1425",
+    icon: "#ff6e6c",
+    iconBackground: "#FFFFFF",
+    sectionBackground: "#FFFFFF"
   },
   {
     id: 3,
-    headingColor: "#716040",
-    textColor: "#f9f4ef",
-    iconColor: "#020826",
-    iconBackgroundColor: "#5a67d8",
-    sectionColor: "#fff"
+    heading: "#716040",
+    text: "#f9f4ef",
+    icon: "#020826",
+    iconBackground: "#5a67d8",
+    sectionBackground: "#fff"
   },
   {
     id: 4,
-    headingColor: "#b8c1ec",
-    textColor: "#232946",
-    iconColor: "#fffffe",
-    iconBackgroundColor: "#5a67d8",
-    sectionColor: "#fff"
+    heading: "#b8c1ec",
+    text: "#232946",
+    icon: "#fffffe",
+    iconBackground: "#5a67d8",
+    sectionBackground: "#fff"
   }
 ];
 

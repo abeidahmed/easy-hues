@@ -1,39 +1,39 @@
 const heroColors = [
   {
     id: 1,
-    headingColor: "#1a202c",
-    headingAccentColor: "#5a67d8",
-    textColor: "#718096",
-    buttonColor: "#2d3748",
-    buttonTextColor: "#fff",
-    sectionColor: "#fff"
+    heading: "#1a202c",
+    headingAccent: "#5a67d8",
+    text: "#718096",
+    buttonBackground: "#2d3748",
+    buttonText: "#fff",
+    sectionBackground: "#fff"
   },
   {
     id: 2,
-    headingColor: "#1f1235",
-    headingAccentColor: "#ff6e6c",
-    textColor: "#1b1425",
-    buttonColor: "#ff6e6c",
-    buttonTextColor: "#1f1235",
-    sectionColor: "#FFFFFF"
+    heading: "#1f1235",
+    headingAccent: "#ff6e6c",
+    text: "#1b1425",
+    buttonBackground: "#ff6e6c",
+    buttonText: "#1f1235",
+    sectionBackground: "#FFFFFF"
   },
   {
     id: 3,
-    headingColor: "#020826",
-    headingAccentColor: "#5a67d8",
-    textColor: "#716040",
-    buttonColor: "#8c7851",
-    buttonTextColor: "#fffffe",
-    sectionColor: "#f9f4ef"
+    heading: "#020826",
+    headingAccent: "#5a67d8",
+    text: "#716040",
+    buttonBackground: "#8c7851",
+    buttonText: "#fffffe",
+    sectionBackground: "#f9f4ef"
   },
   {
     id: 4,
-    headingColor: "#fffffe",
-    headingAccentColor: "#5a67d8",
-    textColor: "#b8c1ec",
-    buttonColor: "#eebbc3",
-    buttonTextColor: "#232946",
-    sectionColor: "#232946"
+    heading: "#fffffe",
+    headingAccent: "#5a67d8",
+    text: "#b8c1ec",
+    buttonBackground: "#eebbc3",
+    buttonText: "#232946",
+    sectionBackground: "#232946"
   }
 ];
 

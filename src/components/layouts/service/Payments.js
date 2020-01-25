@@ -7,7 +7,7 @@ const Payment = props => {
   const labelColor = {
     color: props.colorChange["Form label"]
   };
-  const textColor = {
+  const text = {
     color: props.colorChange["Text color"]
   };
   return (
@@ -20,7 +20,7 @@ const Payment = props => {
           />
           <div className="payment-details-wrapper">
             <h5 style={labelColor}>Payment to Courtland Fenning</h5>
-            <span style={textColor} className="payment-amount">
+            <span style={text} className="payment-amount">
               <span style={labelColor} className="payment-currency">
                 $20,000
               </span>{" "}
@@ -41,7 +41,7 @@ const Payment = props => {
           />
           <div className="payment-details-wrapper">
             <h5 style={labelColor}>Payment to Jacob Chander</h5>
-            <span style={textColor} className="payment-amount">
+            <span style={text} className="payment-amount">
               <span style={labelColor} className="payment-currency">
                 $15,000
               </span>{" "}
@@ -62,7 +62,7 @@ const Payment = props => {
           />
           <div className="payment-details-wrapper">
             <h5 style={labelColor}>Payment to George Mills</h5>
-            <span style={textColor} className="payment-amount">
+            <span style={text} className="payment-amount">
               <span style={labelColor} className="payment-currency">
                 $25,400
               </span>{" "}
@@ -83,7 +83,7 @@ const Payment = props => {
           />
           <div className="payment-details-wrapper">
             <h5 style={labelColor}>Payment to Rebecca Heart</h5>
-            <span style={textColor} className="payment-amount">
+            <span style={text} className="payment-amount">
               <span style={labelColor} className="payment-currency">
                 $17,300
               </span>{" "}

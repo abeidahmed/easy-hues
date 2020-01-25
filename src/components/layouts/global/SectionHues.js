@@ -2,21 +2,21 @@ import React from "react";
 import shortid from "shortid";
 
 const huesOpen = props => {
-  const textColor = {
+  const text = {
     color: props.colorChange["Text color"]
   };
 
-  const headingColor = {
+  const heading = {
     color: props.colorChange["Heading color"]
   };
 
   if (props.huesOpen) {
     return (
       <div className="section-hues">
-        <h3 style={headingColor} className="section-hues-title">
+        <h3 style={heading} className="section-hues-title">
           This section's hues
         </h3>
-        <p style={textColor} className="section-hues-subtitle">
+        <p style={text} className="section-hues-subtitle">
           Click to copy the hex code.
         </p>
         <div className="section-hues-container">
@@ -31,10 +31,10 @@ const huesOpen = props => {
                   className="hues-display"
                 />
                 <span className="hues-info">
-                  <span style={textColor} className="section-color-name">
+                  <span style={text} className="section-color-name">
                     {colorName}
                   </span>
-                  <span style={textColor} className="color-hex">
+                  <span style={text} className="color-hex">
                     {color.toLowerCase()}
                   </span>
                 </span>
