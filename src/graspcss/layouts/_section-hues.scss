@@ -14,24 +14,24 @@
   &-container {
     margin-top: $space-5;
   }
+}
 
-  .button-hues-container {
-    width: 100%;
-    margin-top: $space-2;
-  }
+.button-hues-container {
+  width: 100%;
+  margin-top: $space-2;
+}
 
-  .button-hues {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    height: $space-12;
-    padding: 0 $space-3;
-    border: 1px solid $gray-700; // Need dynamic border color
-    border-radius: $rounded;
-    background: none;
-    cursor: pointer;
-    transition: 200ms ease;
-  }
+.button-hues {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: $space-12;
+  padding: 0 $space-3;
+  border: 1px solid $gray-700; // Need dynamic border color
+  border-radius: $rounded;
+  background: none;
+  cursor: pointer;
+  transition: 200ms ease;
 }
 
 .hues-display {
@@ -69,12 +69,12 @@
     flex-wrap: wrap;
     margin-left: -$space-1;
     margin-right: -$space-1;
+  }
 
-    .button-hues-container {
-      width: $space-1-2;
-      padding-left: $space-1;
-      padding-right: $space-1;
-    }
+  .button-hues-container {
+    width: $space-1-2;
+    padding-left: $space-1;
+    padding-right: $space-1;
   }
 }
 
