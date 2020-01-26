@@ -23,15 +23,15 @@ class SectionHues extends Component {
     if (this.state.copied) {
       document.body.removeChild(mark);
     }
-
-    // await this.toggleFalse();
   };
 
-  // toggleFalse = () => {
-  //   setTimeout(() => {
-  //     this.setState({ copied: false });
-  //   }, 3000);
-  // };
+  hideTooltip = async () => {
+    if (this.state.copied) {
+      await this.setState({
+        copied: false
+      });
+    }
+  };
 
   render() {
     const { heading, text } = this.props.colorChange;
@@ -70,6 +70,7 @@ class SectionHues extends Component {
               <div key={shortid.generate()} className="button-hues-container">
                 <button
                   onClick={() => this.onClick(colorHex.toLowerCase())}
+                  onMouseLeave={this.hideTooltip}
                   className="button-hues"
                 >
                   <span
