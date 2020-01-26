@@ -21,14 +21,8 @@
   border: 0;
   cursor: pointer;
   z-index: z(toggle);
-  padding: $space-2 $space-3;
   outline: none;
   border: 1px solid transparent;
-
-  &:focus {
-    border-color: $gray-900;
-    border-radius: $rounded;
-  }
 
   svg {
     width: $space-6;
@@ -47,14 +41,8 @@
   border: none;
   cursor: pointer;
   font-weight: $weight-semibold;
-  padding: $space-2 $space-3;
   outline: none;
   border: 1px solid transparent;
-
-  &:focus {
-    border-color: $gray-900;
-    border-radius: $rounded;
-  }
 
   &-inner {
     display: flex;
