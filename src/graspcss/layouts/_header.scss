@@ -22,7 +22,6 @@
   cursor: pointer;
   z-index: z(toggle);
   outline: none;
-  border: 1px solid transparent;
 
   svg {
     width: $space-6;
@@ -42,7 +41,6 @@
   cursor: pointer;
   font-weight: $weight-semibold;
   outline: none;
-  border: 1px solid transparent;
 
   &-inner {
     display: flex;
