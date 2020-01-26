@@ -24,14 +24,14 @@ class SectionHues extends Component {
       document.body.removeChild(mark);
     }
 
-    await this.toggleFalse();
+    // await this.toggleFalse();
   };
 
-  toggleFalse = () => {
-    setTimeout(() => {
-      this.setState({ copied: false });
-    }, 3000);
-  };
+  // toggleFalse = () => {
+  //   setTimeout(() => {
+  //     this.setState({ copied: false });
+  //   }, 3000);
+  // };
 
   render() {
     const { heading, text } = this.props.colorChange;
@@ -65,6 +65,7 @@ class SectionHues extends Component {
             Click to copy the hex code.
           </p>
           <div className="section-hues-container">
+            {/** Loop the key value pair of colors and display colorName and colorHex */}
             {Object.entries(this.props.colorChange).map(([colorName, colorHex]) => (
               <div key={shortid.generate()} className="button-hues-container">
                 <button
