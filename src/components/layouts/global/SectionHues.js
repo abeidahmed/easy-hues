@@ -20,9 +20,7 @@ class SectionHues extends Component {
 
     this.setState({ copied: true });
 
-    if (this.state.copied) {
-      document.body.removeChild(mark);
-    }
+    if (this.state.copied) document.body.removeChild(mark);
   };
 
   hideTooltip = async () => {
